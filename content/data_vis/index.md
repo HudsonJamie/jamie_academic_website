@@ -17,13 +17,21 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal point options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)'
-  focal_point: ""
+  caption: ''
+  focal_point: "Bottom"
   preview_only: false
 
 ---
 
 I have a fascination in the different ways we can present data. Whilst academic data visualisation is often based on enabling readers to accurately perceive the absolute values of the data, and hence make inferences, there is obviously merit in making visualisations that are **aesthetically pleasing** and **engaging**. 
+
+## On this page
+
+[TidyTuesday](#tidytuesday)
+
+[Football](#football-data)
+
+----
 
 ## TidyTuesday :computer:
 
@@ -81,14 +89,18 @@ The Bechdel test is a measure of the representation of women in fiction
 
 ## Football data :soccer:
 
-I have produced an R Shiny App with an updating 2020/2021 [Premier League Table](https://jamie-hudson.shinyapps.io/premier-league-table/)
+I have produced an R Shiny App with an updating 2020 / 2021 [Premier League Table](https://jamie-hudson.shinyapps.io/premier-league-table/)
 
 It takes a while to load because it downloads the latest matchday results each time (I probably need to improve the script for this).
 
 With this, you can view:
+
 1) The Premier League Table at a set date (If you go to January 15th 2021, Man Utd are three points clear at the top!)
-2) View the Premier League Table between two dates - the media love to do this to see, for example, the table since Christmas or since a managerial sacking
+
+2) The Premier League Table between two dates - the media love to do this to see, for example, the table since Christmas or since a managerial sacking
+
 3) A lineplot of the weekly league position for each team
+
 4) A lineplot of the total number of points attained by each team, on a weekly basis. 
 
 **Please note that I only have a free shinyapps account, so use is limited to 25 active hours per month**
