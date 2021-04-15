@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jamie Hudson</title>
+    <link>/</link>
+    <description>Recent content on Jamie Hudson</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; J Hudson</copyright>
+    <lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>/talk/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
+      
+      <guid>/talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>/publication/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Courses</title>
+      <link>/courses/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/courses/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>/post/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>/slides/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/slides/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data visualisation</title>
+      <link>/data_vis/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/data_vis/</guid>
+      <description>&lt;p&gt;I have a fascination in the different ways we can present data. Whilst academic data visualisation is often based on enabling readers to accurately perceive the absolute values of the data, and hence make inferences, there is obviously merit in making visualisations that are &lt;em&gt;aesthetically pleasing&lt;/em&gt; and &lt;em&gt;engaging&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;tidytuesday-&#34;&gt;TidyTuesday 👾&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/rfordatascience/tidytuesday/blob/master/README.md&#34;&gt;TidyTuesday&lt;/a&gt; is a weekly project produced by the &lt;code&gt;R4DS Online Learning Community&lt;/code&gt; where each week a raw datset, chart, or article is posted. One is then able to idy and explore the data, and produce an informative(?) visualisation.&lt;/p&gt;
+&lt;p&gt;An important aspect of TidyTuesday is this, taken directly from the TidyTuesday website:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;We will have many sources of data and want to emphasize that no causation is implied. There are various moderating variables that affect all data, many of which might not have been captured in these datasets. As such, our guidelines are to use the data provided to practice your data tidying and plotting techniques. Participants are invited to consider for themselves what nuancing factors might underlie these relationships.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;TidyTuesday is a bit of fun, and is often used to learn and improve R skills, data visualation techniques, and connect with the R community!&lt;/p&gt;
+&lt;h2 id=&#34;2021-week-16httpsgithubcomhudsonjamietidy_tuesdaytreemain2021week_16---us-post-offices-&#34;&gt;&lt;a href=&#34;https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_16&#34;&gt;2021 week 16&lt;/a&gt; - US Post Offices ✉️📪&lt;/h2&gt;
+&lt;p&gt;US Post Office data from Blevins &amp;amp; Helbock, 2021, &amp;ldquo;US Post Offices&amp;rdquo;, Harvard Dataverse
+&lt;img src=&#34;/2021/week_16/us_post14042021.png&#34; alt=&#34;us_post_offices&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2021-week-15httpsgithubcomhudsonjamietidy_tuesdaytreemain2021week_15---deforestation-&#34;&gt;&lt;a href=&#34;https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_15/&#34;&gt;2021 week 15&lt;/a&gt; - Deforestation 🌳🪵&lt;/h2&gt;
+&lt;p&gt;Deforestation data from Our World in Data
+&lt;img src=&#34;/2021/week_15/deforestation_06042021.png&#34; alt=&#34;deforestation&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2021-week-14httpsgithubcomhudsonjamietidy_tuesdaytreemain2021week_14---make-up-shades-&#34;&gt;&lt;a href=&#34;https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_14/&#34;&gt;2021 week 14&lt;/a&gt; - Make up shades 💄&lt;/h2&gt;
+&lt;p&gt;Makeup shades data from The Pudding | See original article &lt;a href=&#34;https://pudding.cool/2021/03/foundation-names/&#34;&gt;here&lt;/a&gt;
+&lt;img src=&#34;https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/makeup_shades_12042021.png&#34; alt=&#34;makeup_shades&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2021-week-13httpsgithubcomhudsonjamietidy_tuesdaytreemain2021week_13---un-votes-&#34;&gt;&lt;a href=&#34;https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_13/&#34;&gt;2021 week 13&lt;/a&gt; - UN votes 🌐🌍&lt;/h2&gt;
+&lt;p&gt;UN voting data from Harvard Dataverse
+&lt;img src=&#34;/2021/week_13/un_votes25032021.png&#34; alt=&#34;UN vote&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2021-week-12httpsgithubcomhudsonjamietidy_tuesdaytreemain2021week_12---video-games-&#34;&gt;&lt;a href=&#34;https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_12/&#34;&gt;2021 week 12&lt;/a&gt; - Video Games 👾&lt;/h2&gt;
+&lt;p&gt;Video game data from the video game distribution service Steam&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/steam_plot16032021.png&#34; alt=&#34;Steam_gaming&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2021-week-112021week_11---bechdel-test-&#34;&gt;&lt;a href=&#34;/2021/week_11/&#34;&gt;2021 week 11&lt;/a&gt; - Bechdel Test 🎥🙋‍♀️&lt;/h2&gt;
+&lt;p&gt;The Bechdel test is a measure of the representation of women in fiction&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2021/week_11/bechdel_test_15032021.png&#34; alt=&#34;Bechdel Test&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Poorly created SciArt</title>
+      <link>/sci-art/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/sci-art/</guid>
+      <description>&lt;p&gt;A big interest of mine away from research is art, and what better way to bridge the gap between art and science than SciArt? Despite my limited skills, I find creating small pieces of artwork to be extremely satisfying and a nice change of pace from the normal academic life.&lt;/p&gt;
+&lt;p&gt;I believe the link between science and art is extremely important. I think having an appreciation of artistic concepts improves figures in acadmeic pieces of work. Illustrations are also a great way of dissemminating information to non-specialists (and specialists) in a way that is both accessible and (hopefully) memorable. As the old adage goes, &lt;em&gt;a picture paints a thousand words&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;8-bit-&#34;&gt;8-bit 👾&lt;/h2&gt;
+&lt;p&gt;I love the accessibility of 8-bit style drawings, they are a bit of fun, but I think their simplicity makes them suitable for poster and oral presentations too. Here are a few examples.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;GIF/Pokemon_pyura.gif&#34; alt=&#34;When I finished sampling a species for my PhD&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Because field work is just real life Pokemon isn&amp;rsquo;t it?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;GIF/Aurelia.gif&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/sci-art/gallery/Hediste.png&#34; data-caption=&#34;Hediste&#34;&gt;
+  &lt;img src=&#34;/sci-art/gallery/Hediste_hu32ecd88b47352d36cc6f2880ebd388e4_3367_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/sci-art/gallery/Lepas.png&#34; data-caption=&#34;Lepas&#34;&gt;
+  &lt;img src=&#34;/sci-art/gallery/Lepas_hu0914582c558b6b585a0d6ed15a68954b_3564_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/sci-art/gallery/Perna.png&#34; data-caption=&#34;Perna&#34;&gt;
+  &lt;img src=&#34;/sci-art/gallery/Perna_hud7dc2a52c6607391f5d41085640a07d7_1945_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/sci-art/gallery/Pollicipes.png&#34; data-caption=&#34;Pollicipes&#34;&gt;
+  &lt;img src=&#34;/sci-art/gallery/Pollicipes_hu60f8603e85510cf2253a6a38ec70e791_3831_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/sci-art/gallery/zCancer.png&#34; data-caption=&#34;Cancer&#34;&gt;
+  &lt;img src=&#34;/sci-art/gallery/zCancer_hu938de0eb502a023ec867baef1cea4ea4_2917_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+&lt;h2 id=&#34;comic-style-art&#34;&gt;Comic style art&lt;/h2&gt;
+&lt;p&gt;Comic style piecies hopefully show that not all scientists take themselves (or their research) too seriously.&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-comic&#34; href=&#34;/sci-art/comic/Cecil_sea_squirt.png&#34; data-caption=&#34;Cecil the sea squirt&#34;&gt;
+  &lt;img src=&#34;/sci-art/comic/Cecil_sea_squirt_hu46910df12ca539a0427ec5de1d70d1ed_194904_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  &lt;a data-fancybox=&#34;gallery-comic&#34; href=&#34;/sci-art/comic/Moodybranch.png&#34; data-caption=&#34;Moodybranch&#34;&gt;
+  &lt;img src=&#34;/sci-art/comic/Moodybranch_hu270f46ac0357f406a876b546b67b012b_809108_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
