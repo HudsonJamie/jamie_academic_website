@@ -23,7 +23,7 @@ image:
 
 ---
 
-I have a fascination in the different ways we can present data. Whilst academic data visualisation is often based on enabling readers to accurately perceive the absolute values of the data, and hence make inferences, there is obviously merit in making visualisations that are **aesthetically pleasing** and **engaging**. 
+I love the different ways we can present data. Whilst academic data visualisation is often based on enabling readers to accurately perceive the absolute values of the data, and hence make inferences, there is obviously merit in making visualisations that are **aesthetically pleasing** and **engaging**. As I have developed coding-based skills through my academic work, I have tried to use these skills to help with computerised data visualtions.
 
 ## On this page
 
