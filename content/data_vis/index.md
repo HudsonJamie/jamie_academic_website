@@ -45,7 +45,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
-### [2021 week 17]https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_17) - Netflix Titles 📺
+### [2021 week 17](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_17) - Netflix Titles 📺
 
 Netflix show data from Shivam Bansal (Kaggle)
 ![netflix_shows](https://github.com/HudsonJamie/tidy_tuesday/blob/main/2021/week_17/netflix21042021.png?raw=true)
