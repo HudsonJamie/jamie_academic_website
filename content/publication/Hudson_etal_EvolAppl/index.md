@@ -1,41 +1,38 @@
 ---
-abstract: Research on the genetics of invasive species often focuses on patterns of genetic diversity and population structure within the introduced range. However, a growing body of literature is demonstrating the need to study the native range, and how native genotypes affect both ecological and evolutionary mechanisms within the introduced range. Here we used genotyping‐by‐sequencing to study both native and introduced ranges [based on 1,653 single nucleotide polymorphisms (SNPs)] of the amphiatlantic marine invertebrate Ciona intestinalis. A previous study using microsatellites analysed samples collected along the Swedish west coast and showed the presence of genetically distinct lineages in deep and shallow waters. Using our SNP data from newly collected samples (285 individuals), we first confirmed the presence of this depth‐defined genomic divergence along the Swedish coast. We then used Approximate Bayesian Computation to infer the historical relationship among sites from the North Sea, the English Channel and the northwest Atlantic and found evidence of ancestral divergence between individuals from deep waters off Sweden and individuals from the English Channel. This divergence was followed by a secondary contact that led to a genetic admixture between the ancestral populations (i.e. deep Sweden and English Channel), which originated the genotypes found in shallow Sweden. We then revealed that the colonisation of C. intestinalis in the northwest Atlantic was as a result of an admixture between shallow Sweden and the English Channel genotypes across the introduced range. Our results showed the presence of both past and recent genetic admixture events that together may have promoted the successful colonisations of C. intestinalis. Our study suggests that secondary contacts potentially reshape the evolutionary trajectories of invasive species through the promotion of intraspecific hybridisation and by altering both colonisation patterns and their ecological effects in the introduced range. 
+abstract: "Human activities alter patterns of biodiversity, particularly through species extinctions and range shifts. Two of these activities are human mediated transfer of species and contemporary climate change, and both allow previously isolated genotypes to come into contact and hybridize, potentially altering speciation rates. Hybrids have been shown to survive environmental conditions not tolerated by either parent, suggesting that, under some circumstances, hybrids may be able to expand their ranges and perform well under rapidly changing conditions. However, studies assessing how hybridization influences contemporary range shifts are scarce. We performed crosses on Pyura herdmani and Pyura stolonifera (Chordata, Tunicata), two closely related marine invertebrate species that are ecologically dominant and can hybridize. These sister species live in sympatry along the coasts of southern Africa, but one has a disjunct distribution that includes northern hemisphere sites. We experimentally assessed the performance of hybrid and parental crosses using different temperature regimes, including temperatures predicted under future climate change scenarios. We found that hybrids showed lower performance than parental crosses at the experimental temperatures, suggesting that hybrids are unlikely to expand their ranges to new environments. In turn, we found that the more widespread species performed better at a wide array of temperatures, indicating that this parental species may cope better with future conditions. This study illustrates how offspring fitness may provide key insights to predict range expansions and how contemporary climate change may mediate both the ability of hybrids to ex- pand their ranges and the occurrence of speciation as a result of hybridization."
 authors:
 - Hudson J
-- Johannesson K
 - McQuaid CD
 - Rius M
-date: "2020-02-01"
-doi: "10.1111/eva.12893"
-featured: false
+date: "2020-01-02"
+doi: ""
+featured: true
 image:
-  caption: 'Image credit: *University of Gothenburg*'
-  focal_point: ""
+  caption: ''
+  focal_point: "smart"
   preview_only: false
 # links:
 # - name: 
-#   url: https://onlinelibrary.wiley.com/doi/epdf/10.1111/eva.12893
+#   url: https://onlinelibrary.wiley.com/doi/full/10.1111/jeb.13609
 # projects:
 # - internal-project
-publication: "Evolutionary Applications"
+publication: "Journal of Evolutionary Biology"
 publication_short: ""
 publication_types:
 - "2"
-# publishDate: "202"
-# slides: ""
-summary: Research on the genetics of invasive species often focuses on patterns of genetic diversity and population structure within the introduced range. However, a growing body of literature is demonstrating the need to study the native range, and how native genotypes affect both ecological and evolutionary mechanisms within the introduced range. Here we used genotyping‐by‐sequencing to study both native and introduced ranges [based on 1,653 single nucleotide polymorphisms (SNPs)] of the amphiatlantic marine invertebrate Ciona intestinalis. A previous study using microsatellites analysed samples collected along the Swedish west coast and showed the presence of genetically distinct lineages in deep and shallow waters. Using our SNP data from newly collected samples (285 individuals), we first confirmed the presence of this depth‐defined genomic divergence along the Swedish coast. We then used Approximate Bayesian Computation to infer the historical relationship among sites from the North Sea, the English Channel and the northwest Atlantic and found evidence of ancestral divergence between individuals from deep waters off Sweden and individuals from the English Channel. This divergence was followed by a secondary contact that led to a genetic admixture between the ancestral populations (i.e. deep Sweden and English Channel), which originated the genotypes found in shallow Sweden. We then revealed that the colonisation of C. intestinalis in the northwest Atlantic was as a result of an admixture between shallow Sweden and the English Channel genotypes across the introduced range. Our results showed the presence of both past and recent genetic admixture events that together may have promoted the successful colonisations of C. intestinalis. Our study suggests that secondary contacts potentially reshape the evolutionary trajectories of invasive species through the promotion of intraspecific hybridisation and by altering both colonisation patterns and their ecological effects in the introduced range.
+publishDate: "2020"
+slides: ""
+summary: ""
 tags:
-- Admixture
-- Invasive species
-title: "Secondary contacts and genetic admixture between divergent genotypes shape colonisation by an amphiatlantic epibenthic invertebrate"
+- Source Themes
+title: "Contemporary climate change hinders hybrid performance of ecologically dominant marine invertebrates"
 url_code: ""
-url_dataset: ''
-url_pdf: "https://onlinelibrary.wiley.com/doi/epdf/10.1111/eva.12893"
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+url_dataset: ""
+url_pdf: ""
+url_poster: ""
+url_project: ""
+url_slides: ""
+url_source: ""
+url_video: ""
 ---
-
 
