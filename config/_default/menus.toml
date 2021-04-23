@@ -20,7 +20,7 @@
 
 [[main]]
   name = "Publications"
-  url = "#featured"
+  url = "publication/"
   weight = 40
   
 [[main]]
@@ -36,12 +36,12 @@
 [[main]]
   name = "SciArt"
   url = "sci-art/"
-  weight = 70
+  weight = 60
 
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 60
+  weight = 70
   
 #[[main]]
  # name = "Twitter"
