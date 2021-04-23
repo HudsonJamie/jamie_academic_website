@@ -17,7 +17,7 @@ image:
 #   url: https://onlinelibrary.wiley.com/doi/epdf/10.1111/eva.12893
 # projects:
 # - internal-project
-publication: "Evolutionary Applications"
+publication: "*Evolutionary Applications*"
 publication_short: ""
 publication_types:
 - "2"
