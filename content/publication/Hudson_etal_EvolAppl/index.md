@@ -26,7 +26,7 @@ slides: ""
 summary: ""
 tags:
 - Source Themes
-title: "Contemporary climate change hinders hybrid performance of ecologically dominant marine invertebrates"
+title: "Contemporary climate change hinders hybrid performance of ecologically dominant marine "
 url_code: ""
 url_dataset: ""
 url_pdf: ""
