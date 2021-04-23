@@ -28,7 +28,7 @@ tags:
 title: "Contemporary climate change hinders hybrid performance of ecologically dominant marine invertebrates"
 url_code: ""
 url_dataset: ""
-url_pdf: ""
+url_pdf: "https://onlinelibrary.wiley.com/doi/epdf/10.1111/jeb.13609"
 url_poster: ""
 url_project: ""
 url_slides: ""
