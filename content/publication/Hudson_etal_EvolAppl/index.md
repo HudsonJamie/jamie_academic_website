@@ -5,9 +5,8 @@ authors:
 - Johannesson K
 - McQuaid CD
 - Rius M
-date: "2020-01-02"
+date: "2020-02-01"
 doi: "10.1111/eva.12893"
-featured: true
 featured: false
 image:
   caption: 'Image credit: *University of Gothenburg*'
@@ -15,10 +14,10 @@ image:
   preview_only: false
 # links:
 # - name: 
-#   url: https://onlinelibrary.wiley.com/doi/full/10.1111/jeb.13609
+#   url: https://onlinelibrary.wiley.com/doi/epdf/10.1111/eva.12893
 # projects:
 # - internal-project
-publication: "Journal of Evolutionary Biology"
+publication: "Evolutionary Applications"
 publication_short: ""
 publication_types:
 - "2"
