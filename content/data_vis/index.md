@@ -45,6 +45,12 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 18](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_18) - CEO departures 📊
+
+CEP departure data from [Gentry et al. 2021](https://onlinelibrary.wiley.com/doi/full/10.1002/smj.3278) & [DataIsPlural](https://www.data-is-plural.com/archive/2021-04-21-edition/)
+![CEO_shows](https://github.com/HudsonJamie/tidy_tuesday/blob/main/2021/week_18/CEO_27042021.png?raw=true)
+
+
 ### [2021 week 17](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_17) - Netflix Titles 📺
 
 Netflix show data from Shivam Bansal (Kaggle)
