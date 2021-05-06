@@ -44,6 +44,19 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 19](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_19) - Water sources 💦
+
+<details>
+  <summary> Water access points data from
+  <a href = "https://data.waterpointdata.org/dataset/Water-Point-Data-Exchange-WPDx-Basic-/jfkt-jmqa">
+  Water Point Data Exchange</a>
+  </summary>
+  
+![water_sources](https://github.com/HudsonJamie/tidy_tuesday/blob/main/2021/week_19/water_sources_06052021.gif?raw=true)
+</details>
+
+----
+
 ### [2021 week 18](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_18) - CEO departures 📊
 
 <details>
