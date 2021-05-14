@@ -44,6 +44,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 20](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_20) - Internet usage 💻
+<details>
+  <summary> US internet usage data from
+  <a href = "https://github.com/microsoft/USBroadbandUsagePercentages">
+  Microsoft</a>
+  </summary>
+  
+![internet_usage](https://github.com/HudsonJamie/tidy_tuesday/blob/main/2021/week_20/internet_data14052021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 19](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_19) - Water sources 💦
 
 <details>
