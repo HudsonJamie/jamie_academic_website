@@ -37,6 +37,9 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/HudsonJamie/
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/jamiehudsonbio/
 superuser: true
 user_groups:
 - Researchers
