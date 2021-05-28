@@ -44,6 +44,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 22](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_22) - Mario Kart 64 🏎🏁
+<details>
+  <summary> Mario Kart 64 World Records from Benedikt Claus & 
+  <a href = "https://mkwrs.com/">
+  MKWR</a>
+  </summary>
+  
+![mario_kart](https://github.com/HudsonJamie/tidy_tuesday/blob/main/2021/week_22/mario_kart_64_27052021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 21](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_21) - Salary survey 💰
 <details>
   <summary> Salary survey data from
