@@ -44,6 +44,19 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 23](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_23) - Survivor TV Show 📺🏝
+<details>
+  <summary> Survivor data from Daniel Oehm who produced the 
+  <a href = "https://github.com/doehm/survivoR">
+  {survivoR}</a>
+  package
+  </summary>
+  
+![Survivor](https://github.com/HudsonJamie/tidy_tuesday/blob/main/2021/week_23/survivor_03062021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 22](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_22) - Mario Kart 64 🏎🏁
 <details>
   <summary> Mario Kart 64 World Records from Benedikt Claus & 
