@@ -45,6 +45,9 @@ gallery_item:
 - album: comic
   caption: Moodybranch
   image: Moodybranch.png
+- album: comic
+  caption: Magritte
+  image: magritte_pipefish.png
 ---
 
 A big interest of mine away from research is art, and what better way to bridge the gap between art and science than SciArt? Despite my limited skills, I find creating small pieces of artwork to be extremely satisfying and a nice change of pace from the normal academic life.
