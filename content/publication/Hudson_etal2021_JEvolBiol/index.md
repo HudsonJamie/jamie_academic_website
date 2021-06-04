@@ -6,7 +6,7 @@ authors:
 - Rius M
 date: "2021-01-02"
 doi: ""
-featured: true
+featured: false
 image:
   caption: ''
   focal_point: "smart"
