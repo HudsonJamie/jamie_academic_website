@@ -44,6 +44,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 24](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_24) - Great Lakes Fisheries 🎣
+<details>
+  <summary> Fishery data from
+  <a href = "http://www.glfc.org/great-lakes-databases.php">
+  Great Lakes Fishery Commission</a>
+  </summary>
+  
+![great_lakes_fish](https://github.com/HudsonJamie/tidy_tuesday/blob/main/2021/week_24/great_lake_fish_08062021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 23](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_23) - Survivor TV Show 📺🏝
 <details>
   <summary> Survivor data from Daniel Oehm who produced the 
