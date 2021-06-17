@@ -44,6 +44,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 25](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_24) - #DuBoisChallenge tweets ✊🏿
+<details>
+  <summary> #DuBoisChallenge data from
+  <a href = "https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-06-15/readme.md">
+  Anthony Starks, Allen Hillery, and Sekou Tyler</a>
+  </summary>
+  
+![dubois_twitter](https://github.com/HudsonJamie/tidy_tuesday/blob/main/2021/week_25/dubois_twitter_17062021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 24](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_24) - Great Lakes Fisheries 🎣
 <details>
   <summary> Fishery data from
