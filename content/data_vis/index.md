@@ -44,7 +44,20 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
-### [2021 week 25](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_24) - #DuBoisChallenge tweets ✊🏿
+### [2021 week 26](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_26) - US Public Park access 🌳🇺🇸
+<details>
+  <summary> Park access data from
+  <a href = "https://www.tpl.org/parks-and-an-equitable-recovery-parkscore-report">
+  The Trust for Public Land</a>
+  </summary>
+  
+![ny_park_access](https://github.com/HudsonJamie/tidy_tuesday/blob/main/2021/week_26/ny_park_access_24062021.png?raw=true)
+![il_park_access](https://github.com/HudsonJamie/tidy_tuesday/blob/main/2021/week_26/il_park_access_24062021.png?raw=true)
+</details>
+
+----
+
+### [2021 week 25](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_25) - #DuBoisChallenge tweets ✊🏿
 <details>
   <summary> #DuBoisChallenge data from
   <a href = "https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-06-15/readme.md">
