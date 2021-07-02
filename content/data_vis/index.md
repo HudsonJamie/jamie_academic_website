@@ -44,6 +44,19 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 27](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_27) - London animal rescues 🐱🐶🇺🇸
+<details>
+  <summary> Animal rescue data from
+  <a href = "https://data.london.gov.uk/dataset/animal-rescue-incidents-attended-by-lfb">
+  London.gov</a>
+  by way of Data is Plural and Georgios Karamanis
+  </summary>
+  
+![battersea_rescue](https://github.com/HudsonJamie/tidy_tuesday/blob/main/2021/week_27/animal_rescues.gif?raw=true)
+</details>
+
+----
+
 ### [2021 week 26](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_26) - US Public Park access 🌳🇺🇸
 <details>
   <summary> Park access data from
