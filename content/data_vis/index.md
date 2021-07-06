@@ -44,6 +44,19 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 28](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_28) - Independence days 🌍🎆
+<details>
+  <summary> Independence Days data from
+  <a href = "https://en.wikipedia.org/wiki/Fireworks">
+  Wikipedia</a>
+  thanks to Isabella Velasquez
+  </summary>
+  
+![independence_days](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_28/independence_days_06072021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 27](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_27) - London animal rescues 🐱🐶🇺🇸
 <details>
   <summary> Animal rescue data from
