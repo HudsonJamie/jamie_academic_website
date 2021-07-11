@@ -31,7 +31,7 @@ title: An Rtistic walk through footballer's careers.
 ---
 ## Background
 
-I soon realised in my data visualisation journey that Nadieh Bremer would endlessly provide inspiration to me. I highly recommend checking our her work at [Visual Cinnamon](https://www.visualcinnamon.com/).
+I soon realised in my data visualisation journey that Nadieh Bremer would endlessly provide inspiration to me. I highly recommend checking our her work at [Visual Cinnamon](https://www.visualcinnamon.com/) and also purchasing the wonderful [Data Sketches](https://www.datasketch.es/) written with Shirley Wu.
 
 One of Nadieh's pieces is a lovely visualisation of the [digits of 𝜋](https://www.visualcinnamon.com/2015/01/exploring-art-hidden-in-pi/), where each digit (0-9) is mapped to a compass direction, with each subsequent digit producing a new step in the corresponding compass direction (the linked blog post explains and shows this much for eloquently). The final result is a beautiful walk through 𝜋. 
 
