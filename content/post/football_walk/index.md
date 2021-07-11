@@ -4,7 +4,7 @@ authors:
 categories: []
 date: "2021-10-07T00:00:00Z"
 draft: false
-featured: false
+featured: true
 image:
   caption: ""
   focal_point: ""
