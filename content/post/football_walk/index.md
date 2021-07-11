@@ -28,6 +28,7 @@ tags: []
 title: An Rtistic walk through footballer's careers.
 ---
 
+---
 ## Background
 
 I soon realised in my data visualisation journey that Nadieh Bremer would endlessly provide inspiration to me. I highly recommend checking our her work at [Visual Cinnamon](https://www.visualcinnamon.com/).
@@ -35,6 +36,8 @@ I soon realised in my data visualisation journey that Nadieh Bremer would endles
 One of Nadieh's pieces is a lovely visualisation of the [digits of 𝜋](https://www.visualcinnamon.com/2015/01/exploring-art-hidden-in-pi/), where effectively each digit (0-9) is mapped to a compass direction, with each subsequent digit producing a new step in a different direction (so long as the digit was different to the previous one). The final result is a beautiful walk through 𝜋. 
 
 To adapt this concept to my interests, I decided to use a similar 'random' walk approach to artistically visualise footballers careers.
+
+---
 
 ## Footballer's careers
 
