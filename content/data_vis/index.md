@@ -44,6 +44,19 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 29](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_29) - Scooby Doo episodes 🐕👻
+<details>
+  <summary> Scooby Doo episode data from
+  <a href = "https://www.kaggle.com/williamschooleman/scoobydoo-complete">
+  Kaggle</a>
+  thanks to manual data aggregation by plummye
+  </summary>
+  
+![scooby_doo](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_29/scooby_doo_13072021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 28](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_28) - Independence days 🌍🎆
 <details>
   <summary> Independence Days data from
