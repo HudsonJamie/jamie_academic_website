@@ -42,7 +42,7 @@ social:
   link: https://www.linkedin.com/in/jamiehudsonbio/
 - icon: cv
   icon_pack: ai
-  link: "/files/resume_cv.pdf"
+  link: "/files/resume_cv.pdf alias"
 superuser: true
 user_groups:
 - Researchers
