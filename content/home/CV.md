@@ -13,4 +13,4 @@ title: 'CV'
 subtitle:
 ---
 
-My [resume](files/hudson_resume.pdf) is available as a PDF. (Last updated: July 16, 2021)
+My [resume](files/hudson_resume.pdf) is available as a PDF. (Last updated: July 16, 2021).
