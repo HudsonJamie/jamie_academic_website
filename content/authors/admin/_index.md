@@ -40,6 +40,9 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/jamiehudsonbio/
+- icon: cv
+  icon_pack: ai
+  link: "/files/resume_cv.pdf"
 superuser: true
 user_groups:
 - Researchers
