@@ -31,9 +31,9 @@ social:
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.co.uk/citations?hl=en&user=ye34-MQAAAAJ
-- icon: researchgate
-  icon_pack: ai
-  link: https://www.researchgate.net/profile/Jamie_Hudson2
+# - icon: researchgate
+#   icon_pack: ai
+#   link: https://www.researchgate.net/profile/Jamie_Hudson2
 - icon: github
   icon_pack: fab
   link: https://github.com/HudsonJamie/
