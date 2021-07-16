@@ -37,11 +37,6 @@
   name = "Posts"
   url = "#posts"
   weight = 60
-
-[[main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 70
   
 #[[main]]
  # name = "Twitter"
@@ -52,5 +47,10 @@
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[main]]
    name = "CV"
-   url = "files/hudson_resume.pdf"
-   weight = 80
+   url = "#CV"
+   weight = 70
+   
+[[main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 80
