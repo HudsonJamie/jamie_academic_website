@@ -34,6 +34,23 @@ $sta-home-section-even: {{ $scr.Get "home_section_even" }};
 $sta-dark-home-section-odd: {{ $scr.Get "dark_home_section_odd" }};
 $sta-dark-home-section-even: {{ $scr.Get "dark_home_section_even" }};
 
+.navbar-brand {
+    font-family: "Lobster";
+    font-size: 2.5em;
+}
+
+.portrait-title h2 {
+    display: none;
+}
+
+.avatar-circle {
+    margin-bottom: 30px;
+}
+/*
+#about h1 {
+    font-family: "Dancing Script";
+}*/
+
 @import "bootstrap_variables";
 @import "vendor/bootstrap/bootstrap";
 @import "academic/academic";
