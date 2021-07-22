@@ -44,6 +44,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 30](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_30) - US Droughts 🌵
+<details>
+  <summary> Data of US droughts from
+  <a href = "https://droughtmonitor.unl.edu/DmData/DataDownload/ComprehensiveStatistics.aspx">
+  U.S. Drought Monitor</a>
+  </summary>
+  
+![ca_droughts](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_30/ca_drought_22072021.gif?raw=true)
+</details>
+
+----
+
 ### [2021 week 29](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_29) - Scooby Doo episodes 🐕👻
 <details>
   <summary> Scooby Doo episode data from
