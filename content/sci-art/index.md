@@ -54,6 +54,13 @@ A big interest of mine away from research is art, and what better way to bridge 
 
 I believe the link between science and art is extremely important. I think having an appreciation of artistic concepts improves figures in acadmeic pieces of work. Illustrations are also a great way of dissemminating information to non-specialists (and specialists) in a way that is both accessible and (hopefully) memorable. As the old adage goes, *a picture paints a thousand words*.
 
+## On this page
+
+[8-bit](#8-bit)
+
+[Illustrations](#comic-style-art)
+
+
 ## 8-bit :space_invader:
 
 I love the accessibility of 8-bit style drawings, they are a bit of fun, but I think their simplicity makes them suitable for poster and oral presentations too. Here are a few examples.
