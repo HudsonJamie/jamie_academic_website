@@ -51,7 +51,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
   U.S. Drought Monitor</a>
   </summary>
   
-![ca_droughts](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_30/ca_drought_22072021.gif?raw=true)
+![ca_droughts](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_30/ca_drought_23072021.gif?raw=true)
 </details>
 
 ----
