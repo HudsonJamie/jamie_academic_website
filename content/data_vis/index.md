@@ -44,6 +44,19 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 31](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_31) - Olympics 🏅
+<details>
+  <summary> Olympics data from
+  <a href = "https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results?select=noc_regions.csv">
+  Kaggle</a>
+  </summary>
+  
+![summer_olympics_1](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_31/summer_olympics_1_29072021.png?raw=true)
+![summer_olympics_2](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_31/summer_olympics_2_29072021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 30](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_30) - US Droughts 🌵
 <details>
   <summary> Data of US droughts from
