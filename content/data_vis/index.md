@@ -44,7 +44,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
-### [2021 week 32](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_31) - Paralympics 🏅
+### [2021 week 32](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_31) - Paralympics 🏅🇮🇪
 <details>
   <summary> Paralympics data from the
   <a href = "https://db.ipc-services.org/sdms/hira/web/index">
