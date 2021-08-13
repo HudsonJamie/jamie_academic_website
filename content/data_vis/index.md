@@ -51,7 +51,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
   International Paralympic Committee</a>
   </summary>
   
-![paralympics](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_32/paralympics_10082021.png?raw=true)
+![paralympics](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_32/paralympics_13082021.png?raw=true)
 </details>
 
 ----
