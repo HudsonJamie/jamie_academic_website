@@ -44,6 +44,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 33](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_33) - BEA Infrastructure investment 💰
+<details>
+  <summary> U.S. Infrustructure investment data from the
+  <a href = "https://www.bea.gov/system/files/papers/BEA-WP2020-12.pdf">
+  Bureau of Economic Analysis</a>
+  </summary>
+  
+![bea](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_33/BEA_16082021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 32](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_31) - Paralympics 🏅🇮🇪
 <details>
   <summary> Paralympics data from the
