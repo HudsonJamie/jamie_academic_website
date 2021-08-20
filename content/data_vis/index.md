@@ -44,6 +44,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 34](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_34) - Star Trek voice commands 🚀🖖
+<details>
+  <summary> Star Trek voice commands data from the
+  <a href = "http://www.speechinteraction.org/TNG/">
+  SpeechInteraction.org</a>
+  </summary>
+  
+![star_trek](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_34/star_trek_20082021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 33](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_33) - BEA Infrastructure investment 💰
 <details>
   <summary> U.S. Infrastructure investment data from the
