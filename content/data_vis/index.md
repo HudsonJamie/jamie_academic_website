@@ -44,6 +44,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 35](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_35) - Lorises 🙉
+<details>
+  <summary> Strepsirrhine primate data from the
+  <a href = "https://lemur.duke.edu/">
+  Duke Lemur Center</a>
+  </summary>
+  
+![lemur](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_35/lemurs_24082021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 34](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_34) - Star Trek voice commands 🚀🖖
 <details>
   <summary> Star Trek voice commands data from the
