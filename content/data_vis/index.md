@@ -44,6 +44,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 36](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_36) - Australian bird baths 🦜
+<details>
+  <summary> Bird bath data from 
+  <a href = "https://figshare.com/articles/dataset/Avian_Assemblages_at_Bird_Baths_A_Comparison_of_Urban_and_Rural_Bird_Baths_in_Australia/3110284">
+  Cleary <i>et al</i>., (2016) PLOS ONE 11(3): e0150899</a>
+  </summary>
+  
+![aus_bird](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_36/aus_birds_01092021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 35](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_35) - Lorises 🙉
 <details>
   <summary> Strepsirrhine primate data from the
