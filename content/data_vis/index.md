@@ -44,6 +44,22 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 37](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_37) - Formula One 🏎
+<details>
+  <summary> Formula One data from 
+  <a href = "https://ergast.com/mrd/db/">
+  Ergast API
+  </summary>
+  
+![formula_1](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_37/hamilton_f1_07092021.png?raw=true)
+
+![formula_1](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_37/vettel_f1_07092021.png?raw=true)
+
+![formula_1](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_37/schumacher_f1_07092021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 36](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_36) - Australian bird baths 🦜
 <details>
   <summary> Bird bath data from 
