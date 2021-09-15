@@ -44,6 +44,20 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+  ### [2021 week 38](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_38) - US Billboard 100 🎼
+<details>
+  <summary> US Billboard data from 
+  <a href = "https://data.world/kcmillersean/billboard-hot-100-1958-2017#">
+  Data.World</a> by way of Sean Miller, 
+  <a href = "http://billboard.com/">
+  Billboard.com</a> and Spotify
+  </summary>
+  
+![us_billboard](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_38/us_billboard_15092021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 37](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_37) - Formula One 🏎
 <details>
   <summary> Formula One data from 
