@@ -44,6 +44,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 39](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_39) - Emmy awards 🏆
+<details>
+  <summary> Emmy award data from
+  <a href = "https://emmys.com">
+  emmys.com
+  </summary>
+  
+![emmys](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_39/emmys_22092021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 38](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_38) - US Billboard 100 🎼
 <details>
   <summary> US Billboard data from 
