@@ -44,6 +44,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 41](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_41) - US registered nurses 🏥
+<details>
+  <summary> US Nurse data from
+  <a href = "https://data.world/zendoll27/registered-nursing-labor-stats-1998-2020">
+  Data.World
+  </summary>
+  
+![emmys](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_41/nurses_05102021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 39](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_39) - Emmy awards 🏆
 <details>
   <summary> Emmy award data from
