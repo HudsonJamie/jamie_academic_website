@@ -44,6 +44,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 42](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_42) - Global Seafood 🐟
+<details>
+  <summary> Global fishing data from
+  <a href = "https://ourworldindata.org/seafood-production">
+  OurWorldinData.org
+  </summary>
+  
+![global_fishing](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_42/global_fishing_13102021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 41](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_41) - US registered nurses 🏥
 <details>
   <summary> US Nurse data from
