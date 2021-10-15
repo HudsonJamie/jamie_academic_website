@@ -428,19 +428,19 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 ## Football data :soccer:
 
-I have produced an R Shiny App with an updating 2020 / 2021 [Premier League Table](https://jamie-hudson.shinyapps.io/premier-league-table/)
-
-It takes a while to load because it downloads the latest matchday results each time (I probably need to improve the script for this).
+I have produced an R Shiny App with an updating [2021 / 2022 Premier League Table](https://jamie-hudson.shinyapps.io/premier-league-table-2021-22/) 
 
 With this, you can view:
 
-1) The Premier League Table at a set date (If you go to January 15th 2021, Man Utd are three points clear at the top!)
+1) The Premier League Table at a set date
 
 2) The Premier League Table between two dates - the media love to do this to see, for example, the table since Christmas or since a managerial sacking
 
 3) A lineplot of the weekly league position for each team
 
 4) A lineplot of the total number of points attained by each team, on a weekly basis. 
+
+The previous version for 2020/21 can be found here: [Premier League Table](https://jamie-hudson.shinyapps.io/premier-league-table/)
 
 **Please note that I only have a free shinyapps account, so use is limited to 25 active hours per month**
 
