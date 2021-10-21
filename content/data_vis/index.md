@@ -44,6 +44,19 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 43](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_43) - Giant pumpkins 🎃
+<details>
+  <summary> Giant pumpkin data from
+  <a href = "BigPumpkins.com">
+  BigPumpkins.com
+  </summary>
+  
+![giant_pumpkins_med](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_43/giant_pumpkins_med_19102021.png?raw=true)
+![giant_pumpkins_max_19102021](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_43/giant_pumpkins_max_19102021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 42](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_42) - Global Seafood 🐟
 <details>
   <summary> Global fishing data from
