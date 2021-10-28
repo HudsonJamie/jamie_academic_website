@@ -44,11 +44,23 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 44](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_44) - Ultra trail running 🏃‍♀️🏔
+<details>
+  <summary> Ultra trail data courtesy of Benjamin Nowak by way of
+  <a href = "https://itra.run/Races/FindRaceResults">
+  International Trail Running Association (ITRA)</a>
+  </summary>
+  
+![utmb](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_44/ultra_running_27102021.gif?raw=true)
+</details>
+
+----
+
 ### [2021 week 43](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_43) - Giant pumpkins 🎃
 <details>
   <summary> Giant pumpkin data from
-  <a href = "BigPumpkins.com">
-  BigPumpkins.com
+  <a href = "https://www.bigpumpkins.com/">
+  BigPumpkins.com</a>
   </summary>
   
 ![giant_pumpkins_med](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_43/giant_pumpkins_med_19102021.png?raw=true)
@@ -61,7 +73,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 <details>
   <summary> Global fishing data from
   <a href = "https://ourworldindata.org/seafood-production">
-  OurWorldinData.org
+  OurWorldinData.org</a>
   </summary>
   
 ![global_fishing](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_42/global_fishing_13102021.png?raw=true)
@@ -73,7 +85,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 <details>
   <summary> US Nurse data from
   <a href = "https://data.world/zendoll27/registered-nursing-labor-stats-1998-2020">
-  Data.World
+  Data.World</a>
   </summary>
   
 ![emmys](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_41/nurses_05102021.png?raw=true)
@@ -85,7 +97,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 <details>
   <summary> Emmy award data from
   <a href = "https://emmys.com">
-  emmys.com
+  emmys.com</a>
   </summary>
   
 ![emmys](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_39/emmys_22092021.png?raw=true)
@@ -99,7 +111,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
   <a href = "https://data.world/kcmillersean/billboard-hot-100-1958-2017#">
   Data.World</a> by way of Sean Miller, 
   <a href = "http://billboard.com/">
-  Billboard.com</a> and Spotify
+  Billboard.com</a> and Spotify</a>
   </summary>
   
 ![us_billboard](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_38/us_billboard_15092021.png?raw=true)
@@ -111,7 +123,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 <details>
   <summary> Formula One data from 
   <a href = "https://ergast.com/mrd/db/">
-  Ergast API
+  Ergast API</a>
   </summary>
   
 ![formula_1](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_37/hamilton_f1_07092021.png?raw=true)
