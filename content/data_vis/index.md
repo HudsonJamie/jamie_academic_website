@@ -30,6 +30,8 @@ I love the different ways we can present data. Whilst academic data visualisatio
 
 [Football](#football-data)
 
+[Pokemon](#pokemon)
+
 ----
 
 ## TidyTuesday :computer:
@@ -44,11 +46,11 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
-### [2021 week 44](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_44) - Ultra trail running 🏃‍♀️🏔
+### [2021 week 44](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_44) - Ultra trail running 🏃‍♀️
 <details>
   <summary> Ultra trail data courtesy of Benjamin Nowak by way of
   <a href = "https://itra.run/Races/FindRaceResults">
-  International Trail Running Association (ITRA)</a>
+  International Trail Running Association (ITRA)
   </summary>
   
 ![utmb](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_44/ultra_running_27102021.gif?raw=true)
@@ -60,7 +62,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 <details>
   <summary> Giant pumpkin data from
   <a href = "https://www.bigpumpkins.com/">
-  BigPumpkins.com</a>
+  BigPumpkins.com
   </summary>
   
 ![giant_pumpkins_med](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_43/giant_pumpkins_med_19102021.png?raw=true)
@@ -73,7 +75,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 <details>
   <summary> Global fishing data from
   <a href = "https://ourworldindata.org/seafood-production">
-  OurWorldinData.org</a>
+  OurWorldinData.org
   </summary>
   
 ![global_fishing](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_42/global_fishing_13102021.png?raw=true)
@@ -85,7 +87,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 <details>
   <summary> US Nurse data from
   <a href = "https://data.world/zendoll27/registered-nursing-labor-stats-1998-2020">
-  Data.World</a>
+  Data.World
   </summary>
   
 ![emmys](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_41/nurses_05102021.png?raw=true)
@@ -97,7 +99,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 <details>
   <summary> Emmy award data from
   <a href = "https://emmys.com">
-  emmys.com</a>
+  emmys.com
   </summary>
   
 ![emmys](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_39/emmys_22092021.png?raw=true)
@@ -111,7 +113,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
   <a href = "https://data.world/kcmillersean/billboard-hot-100-1958-2017#">
   Data.World</a> by way of Sean Miller, 
   <a href = "http://billboard.com/">
-  Billboard.com</a> and Spotify</a>
+  Billboard.com</a> and Spotify
   </summary>
   
 ![us_billboard](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_38/us_billboard_15092021.png?raw=true)
@@ -123,7 +125,7 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 <details>
   <summary> Formula One data from 
   <a href = "https://ergast.com/mrd/db/">
-  Ergast API</a>
+  Ergast API
   </summary>
   
 ![formula_1](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_37/hamilton_f1_07092021.png?raw=true)
@@ -465,7 +467,15 @@ With this, you can view:
 
 4) A lineplot of the total number of points attained by each team, on a weekly basis. 
 
-The previous version for 2020/21 can be found here: [Premier League Table](https://jamie-hudson.shinyapps.io/premier-league-table/)
+*The previous version for 2020/21 can be found here: [Premier League Table](https://jamie-hudson.shinyapps.io/premier-league-table/)*
 
 **Please note that I only have a free shinyapps account, so use is limited to 25 active hours per month**
+
+----
+
+## Pokémon
+
+There is a plethora of Pokémon data visualisation online, with much providing informative insights on specific Pokémon stats (HP, Attack, Sp. Atk etc). I thought it would be interesting to visualise the different "type" that each Pokémon is.
+
+I downloaded a dataset from [Kaggle](https://www.kaggle.com/maca11/all-pokemon-dataset) that contains the typing of each Pokémon (some Pokémon have two types), and used *{geom_tile}* to produce a tile representing each Pokémon, where the colour of the tile maps to each Pokémon's typing.
 

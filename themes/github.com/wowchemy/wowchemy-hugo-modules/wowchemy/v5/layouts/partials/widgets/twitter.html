@@ -1,0 +1,26 @@
+{{ $st := .page }}
+{{ $columns := $st.Params.design.columns | default "1" }}
+
+<div class="row">
+  {{ if ne $columns "1" }}
+    <div class="col-12 col-lg-4 section-heading">
+      {{ with $st.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+      {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+    </div>
+    <div class="col-12 col-lg-8">
+      {{ $st.Content }}
+    </div>
+  {{ else }}
+    <div class="col-lg-12">
+      {{ with $st.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+      {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+      {{ $st.Content }}
+    </div>
+  {{ end }}
+</div>
+
+<div>
+  <center>
+<a class="twitter-timeline" data-width="500" data-height="500" data-theme="light" data-link-color="#1DA1F2" href="https://twitter.com/Jamie_Bio?ref_src=twsrc%5Etfw">Tweets by Jamie_Bio</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
+</div>

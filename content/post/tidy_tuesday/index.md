@@ -1,5 +1,6 @@
 ---
-title: "Tidy Tuesday :computer:"
+title: "Tidy Tuesday"
+subtitle: ":computer:"
 summary: "My TidyTuesday contributions"
 authors: []
 tags: [data visualizations, ggplot2, rstats, tidy tuesday]

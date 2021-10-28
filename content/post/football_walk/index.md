@@ -1,30 +1,19 @@
 ---
 authors:
 - admin
-categories: []
+tags: [data visualizations, ggplot2, rstats, sport]
+categories: [data visualizations, rstats, sport]
+
 date: "2021-07-10T00:00:00Z"
 draft: false
 featured: true
 image:
   caption: ""
   focal_point: ""
-gallery_item:
-- album: gallery
-  caption: Messi
-  image: col_country_messi.png
-- album: gallery
-  caption: Ruud
-  image: col_country_ruud.png
-- album: gallery
-  caption: Henry
-  image: col_country_henry.png
-- album: gallery
-  caption: O'Shea
-  image: col_country_oshea.png
+  preview_only: true
 projects: []
 subtitle: Another great showcase of what can be performed in R!
 summary: Another great showcase of what can be performed in R!
-tags: []
 title: An Rtistic walk through footballer's careers.
 ---
 
@@ -57,9 +46,9 @@ Whilst I actually think this works nicely for someone like Ronaldo who has playe
 
 ![col_country_ronaldo](./col_country_ronaldo.png)
 
-See below for a galler of some of the players that I have created these visualisations for. As an Ireland and Manchester United, I couldn't help but include the mighty John O'Shea in this pantheon of all-time greats.
+See below for a gallery of some of the players that I have created these visualisations for. As an Ireland and Manchester United, I couldn't help but include the mighty John O'Shea in this pantheon of all-time greats.
 
-{{< gallery >}}
+{{< gallery album="football_walk_gallery" >}}
 
 I hope you enjoy! This is my first blog post not Marine Biology related, so any constructive comments are welcome 😊.
 

@@ -1,6 +1,12 @@
 ---
-authors:
-- admin
+# Display name
+title: Dr Jamie Hudson
+superuser: true
+# role: <p style="font-size:30px">Dr Jamie Hudson</p><b>Research Fellow</b>
+role: Research Fellow
+organizations:
+- name: University of Southampton
+  url: ""
 bio: My research interests evolution, population genetics within marine invertebrates, and invasive species.
 education:
   courses:
@@ -11,16 +17,12 @@ education:
     institution: University of Southampton
     year: 2011-2015
 email: "j.hudson@soton.ac.uk"
+highlight_title: true
 interests:
 - Evolution
 - Ecology
 - Invasive species
 - Data visualisation
-name: Dr Jamie Hudson
-organizations:
-- name: University of Southampton
-  url: ""
-role: Research Fellow
 social:
 - icon: envelope
   icon_pack: fas
@@ -31,9 +33,6 @@ social:
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.co.uk/citations?hl=en&user=ye34-MQAAAAJ
-# - icon: researchgate
-#   icon_pack: ai
-#   link: https://www.researchgate.net/profile/Jamie_Hudson2
 - icon: github
   icon_pack: fab
   link: https://github.com/HudsonJamie/
@@ -44,11 +43,9 @@ social:
   icon_pack: ai
   link: "#CV"
 superuser: true
-user_groups:
-- Researchers
-- Visitors
 ---
 
 I am a Postdoctoral Research Fellow at the University of Southampton, working within the [Rius Lab Group](http://riuslab.com/).
 
 My current research uses genomic tools to futher understand population connectivity in the oceans and help mitigate the deterimental effects of climate change, as part of the [futureMARES research project](https://www.futuremares.eu/) 
+

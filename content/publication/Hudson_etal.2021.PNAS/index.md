@@ -10,7 +10,7 @@ authors:
 - Rius M
 date: "2021-06-04"
 doi: "10.1073/pnas.2022169118"
-featured: true
+featured: false
 image:
   caption: ''
   focal_point: "Smart"
@@ -20,11 +20,11 @@ image:
 #   url: https://www.pnas.org/content/118/23/e2022169118
 # projects:
 # - internal-project
-publication: "*Proceedings of the National Academy of Sciences of the United States of America*"
+publication: "*Proceedings of the National Academy of Sciences of the United States of America*, 118, (23), e2022169118"
 publication_short: ""
 publication_types:
 - "2"
-publishDate: "2021"
+publishDate: "2021-06-04"
 slides: ""
 summary: ""
 tags:

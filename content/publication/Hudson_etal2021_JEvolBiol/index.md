@@ -16,7 +16,7 @@ image:
 #   url: https://onlinelibrary.wiley.com/doi/full/10.1111/jeb.13609
 # projects:
 # - internal-project
-publication: "*Journal of Evolutionary Biology*"
+publication: "*Journal of Evolutionary Biology*, 34: 60– 72"
 publication_short: ""
 publication_types:
 - "2"

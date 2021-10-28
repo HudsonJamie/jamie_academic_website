@@ -1,0 +1,15 @@
+# Font style metadata
+name = "Custom"
+
+# Optional Google font URL
+google_fonts = "Lobster|Lato:400,700|Nunito|Roboto+Mono"
+
+# Font families
+heading_font = "Nunito"
+body_font = "Lato"
+nav_font = "Nunito"
+mono_font = "Roboto Mono"
+
+# Font size
+font_size = "20"
+font_size_small = "16"
