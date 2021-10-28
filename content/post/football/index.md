@@ -11,7 +11,6 @@ image:
 
 toc: false
 ---
-{{< figure src="./featured.png" title="" lightbox="true" size=100% >}}
 
 ## Football data :soccer:
 
