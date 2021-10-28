@@ -29,3 +29,8 @@ I downloaded a dataset from [Kaggle](https://www.kaggle.com/maca11/all-pokemon-d
 
 {{< figure src="./featured.png" title="" lightbox="true" >}}
 
+Browse the gallery below to see the visualisations for all regions of Pokémon.
+
+{{< gallery album="pokemon_types" >}}
+
+
