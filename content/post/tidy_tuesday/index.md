@@ -25,6 +25,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 44](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_44) - Ultra trail running 🏃‍♀️
+<details>
+  <summary> Ultra trail data courtesy of Benjamin Nowak by way of
+  <a href = "https://itra.run/Races/FindRaceResults">
+  International Trail Running Association (ITRA)
+  </summary>
+  
+![utmb](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_44/ultra_running_27102021.gif?raw=true)
+</details>
+
+----
+
 ### [2021 week 43](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_43) - Giant pumpkins 🎃
 <details>
   <summary> Giant pumpkin data from
