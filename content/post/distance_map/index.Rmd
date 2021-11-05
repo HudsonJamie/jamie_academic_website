@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Walking distance map"
 author: "Jamie Hudson"
 date: "2021-11-05"
@@ -11,8 +12,6 @@ image:
   focal_point: ""
   preview_only: true
   
-draft: true
-
 toc: false
 ---
 
@@ -20,6 +19,8 @@ toc: false
 knitr::opts_chunk$set(echo = TRUE, out.width = '80%', out.height = '560px', fig.align="center")
 
 library(tweetrmd)
+library(openrouteservice)
+library(mapview)
 ```
 
 ## R Markdown
@@ -47,7 +48,7 @@ Firstly, let's start with obtaining the walking distance data we will be using. 
 
 After reading the Open Route Service (ORS) [terms and conditions](https://openrouteservice.org/terms-of-service/), we can install and load the packages:
 
-```{r, message = FALSE}
+```{r, message = FALSE, eval = FALSE}
 remotes::install_github("GIScience/openrouteservice-r")
 library(openrouteservice)
 library(mapview)
