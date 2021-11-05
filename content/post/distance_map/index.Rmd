@@ -16,14 +16,15 @@ toc: false
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, out.width = '80%', out.height = '560px', fig.align="center")
+knitr::opts_chunk$set(echo = TRUE, out.width = '80%', fig.align="center")
 
 library(tweetrmd)
 library(openrouteservice)
 library(mapview)
+library(tidyverse)
 ```
 
-## R Markdown
+## #30DayMapChallenge
 
 Unfortunately I have yet to find time to partake in the brilliant [#30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge), an online challenge created by [Topi Tjukanov](https://twitter.com/tjukanov), where participants aim to create a map based on a specific daily theme throughout November.
 
@@ -42,7 +43,9 @@ I thought I would try to recreate a similar plot using R, and use this as an opp
 
 *I have no doubt that this tutorial will not be the most efficient way of producing such plots, if anyone has any tips on improving the code please feel free to contact me.*
 
-## Tutorial
+*This tutorial also assumes you are familiar with the [`Tidyverse`](https://style.tidyverse.org/)*
+
+## Step 1: Walking distance data
 
 Firstly, let's start with obtaining the walking distance data we will be using. For this, we will be using the R library `openrouteservice`, which enables us to obtain free geographic data from [OpenStreetMap](http://www.openstreetmap.org/) through the **openrouteservice API**. We will also briefly use the `mapview` package.
 
@@ -83,9 +86,9 @@ The arguments we have used are:
 
 Now we just need to tidy up our `sf` object a bit. We can split the `sf` file into a list of each time interval (which we convert into a factor), reorder this list from largest to smallest isochrone, and rename the isochrones to something more intuitive (i.e. minutes).
 
-We can use the `mapview()` function to view a leaflet map to visualise the isochrones. This is useful to make a note of the approximate maximum/minimum latitude and longitude for our final map.
+We can use the `mapview()` function to view an interactive leaflet map to visualise the isochrones. This is useful to make a note of the approximate maximum/minimum latitude and longitude for our final map.
 
-```{r, message = FALSE}
+```{r, message = FALSE, results = 'hide'}
 mapviewOptions(fgb = FALSE)
 
 intervals <- levels(factor(cj_iso$value))
@@ -96,3 +99,142 @@ names(cj_iso_list) <- sprintf("%s_min", as.numeric(names(cj_iso_list))/60)
 
 mapview(cj_iso_list, alpha.regions = 0.2, homebutton = FALSE, legend = FALSE)
 ```
+
+Unfortunately I cannot get leaflet to run on my website, but here is a static image of what the `mapview()` function will produce:
+![](mapviewer_sample.png)
+
+# Step 2: Build background map
+
+Now we need to obtain the data required plot our map (i.e. roads, rivers, railways etc). This is very similar to my [week 33 #TidyTuesday submission](https://github.com/HudsonJamie/tidy_tuesday#2021-week-27---london-animal-rescues-), and as I mention in the script for my #TidyTuesday submission, much of the code is adapted from [here](https://taraskaduk.com/posts/2021-01-18-print-street-maps/#ref-burkhart), [here](https://ggplot2tutor.com/tutorials/streetmaps), and [here](https://joshuamccrain.com/tutorials/maps/streets_tutorial.html). I highly recommend looking at these links for a more thorough description of map building in R.
+
+To start, let's set the limit for our map (i.e. the maximum and minimum values of latitude and longitude). Remember above I said the mapview map is useful for this! 
+
+```{r}
+x <- c(-0.246226, -0.094604)
+y <- c(51.417127, 51.502548)
+
+custom_wandsworth <- rbind(x,y) 
+colnames(custom_wandsworth) <- c("min", "max")
+```
+
+To obtain our data, we will use the package [`osmdata`](https://cran.r-project.org/web/packages/osmdata/vignettes/osmdata.html), which allows us to access data from OpenStreetMap (OSM) in vector form. What we need for our code to do is basically query OSM data from the web, state what features (something that can be mapped, see [here](https://wiki.openstreetmap.org/wiki/Map_features) for more info) we want, and tell `osmdata` how we want to save all this mappy goodness. 
+
+```{r}
+library(osmdata)
+
+streets <- custom_wandsworth %>%
+  opq() %>%
+  add_osm_feature(key = "highway", 
+                  value = c("motorway", "primary", 
+                            "secondary", "tertiary",
+                            "trunk", "secondary_link", "tertiary_link",
+                            "residential", "living_street",
+                            "unclassified",
+                            "service", "footway")) %>%
+  osmdata_sf()
+```
+
+Here we are providing our `custom_wandsworth` data.frame and piping it through:
+
+* `opq()`: to build an Overpass query (i.e. query OSM data from the web)
+* `add_osm_feature`: where we state what features we want:
+    + features are represent as `key-value` pairs. All roads, paths, etc are designed the `key = highway` for example. Again, the [map features page](https://wiki.openstreetmap.org/wiki/Map_features) is great for this.
+* `osmdata_sf()` enables us to return the query as an osmdata object in sf format.
+
+The above code has given us all the roads, paths, streets we could ever dream of in our little corner of London. Let's also obtain railways 
+
+```{r}
+railway <- custom_wandsworth %>%
+  opq()%>%
+  add_osm_feature(key = "railway", value="rail") %>%
+  osmdata_sf()
+```
+and water (after all, Clapham Junction is close to the River Thames). Note that lakes and rivers are part of two different `key` values.
+```{r}
+nat_water <- custom_wandsworth %>%
+  opq() %>%
+  add_osm_feature(key = "natural", value = "water") %>%
+  osmdata_sf() %>% 
+  unname_osmdata_sf()
+
+river <- custom_wandsworth %>%
+  opq() %>%
+  add_osm_feature(key = "waterway", value = c("river", "riverbank")) %>%
+  osmdata_sf() %>% 
+  unname_osmdata_sf()
+```
+We can combine the two watery sf objects. For this we need to load the package sf. What we do here is combine the `nat_water` and `rive` sf objects, extract the multipolygons, select osm_id and name variables, and create a new variable called `area` which is the area of each multipolygon, before removing the smallest 30% of water features.
+```{r}
+library(sf)
+water <- c(nat_water, river) %>% 
+  .$osm_multipolygons %>% 
+  select(osm_id, name) %>% 
+  mutate(area = st_area(.)) %>% 
+  filter(area >= quantile(area, probs = 0.3))
+```
+
+```{r}
+rep.x <- function(i, na.rm=FALSE) {
+  
+  if(i == length(cj_iso_list)) {streets$osm_lines %>% st_intersection(cj_iso_list[[i]])}
+  
+  else if(i < length(cj_iso_list)) {streets$osm_lines %>% st_intersection(st_difference(cj_iso_list[[i]], cj_iso_list[[i+1]]))}
+
+}
+
+list_df <- lapply(1:length(cj_iso_list), rep.x)
+water_cropped <- water %>% st_crop(st_bbox(c(xmin = custom_wandsworth[1,1], xmax = custom_wandsworth[1,2], ymax = custom_wandsworth[2,2], ymin = custom_wandsworth[2,1]), crs = st_crs(4326)))
+rail_cropped <- railway$osm_lines %>% st_crop(st_bbox(c(xmin = custom_wandsworth[1,1], xmax = custom_wandsworth[1,2], ymax = custom_wandsworth[2,2], ymin = custom_wandsworth[2,1]), crs = st_crs(4326)))
+
+library(paletteer) 
+colpal <- paletteer_d("rcartocolor::Mint", 6, direction = -1)
+
+ggplot() +
+  geom_sf(data = water_cropped,
+          inherit.aes = FALSE,
+          fill = "#151515",
+          lwd = 0) +
+  geom_sf(data = streets$osm_lines,
+          inherit.aes = FALSE,
+          color = "#151515",
+          size = .2) +
+  geom_sf(data = list_df[[1]],
+          inherit.aes = FALSE,
+          color = colpal[1],
+          size = .2,
+          alpha = .8) +
+  geom_sf(data = list_df[[2]],
+          inherit.aes = FALSE,
+          color = colpal[2],
+          size = .2,
+          alpha = .8) +
+  geom_sf(data = list_df[[3]],
+          inherit.aes = FALSE,
+          color = colpal[3],
+          size = .2,
+          alpha = .8) +
+  geom_sf(data = list_df[[4]],
+          inherit.aes = FALSE,
+          color = colpal[4],
+          size = .2,
+          alpha = .8) +
+  geom_sf(data = list_df[[5]],
+          inherit.aes = FALSE,
+          color = colpal[5],
+          size = .2,
+          alpha = .8) +
+  geom_sf(data = list_df[[6]],
+          inherit.aes = FALSE,
+          color = colpal[6],
+          size = .2,
+          alpha = .8) +
+  geom_sf(data = rail_cropped,
+          inherit.aes = FALSE,
+          color = "black",
+          size = .2,
+          alpha = .4) +
+  theme_void() +
+  theme(plot.title = element_text(size = 38, family = "lato", face="bold", hjust= 0.5),
+        plot.background = element_rect(fill = "#060606", colour = NA))
+```
+
