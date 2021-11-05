@@ -1,0 +1,95 @@
+---
+title: "Walking distance map"
+author: "Jamie Hudson"
+date: "2021-11-05"
+output: html_document
+tags: [data visualizations, ggplot2, rstats]
+categories: [data visualizations, rstats]
+
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: true
+  
+toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, out.width = '80%', out.height = '560px', fig.align="center")
+
+library(tweetrmd)
+```
+
+## R Markdown
+
+Unfortunately I have yet to find time to partake in the brilliant [#30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge), an online challenge created by [Topi Tjukanov](https://twitter.com/tjukanov), where participants aim to create a map based on a specific daily theme throughout November.
+
+One of my favourite parts of such a challenge is seeing wonderful maps produced using a variety of different tools ranging such as QGIS, Mapshaper, and (of course) **R**.
+
+One map that jumped out to me, and that I keep going back to, is this brilliant submission by [Maria Ruehringer](https://twitter.com/MRuehringer) for Day 2: Lines.
+
+
+```{r twitter, echo = FALSE}
+tweet_embed("https://twitter.com/MRuehringer/status/1455453832666886144")
+```
+
+Maria has used QGIS and Inkscape to produce this lovely map of Amsterdam, with the colour of each street mapped to walking distance from Amsterdam Central Station, using OpenStreetMap data.
+
+I thought I would try to recreate a similar plot using R, and use this as an opportunity to create a tutorial for such plots. For this, I will be using Battersea as our area of interest, Clapham Junction Station specifically, as this is the station I use to commute between London and Southampton.
+
+*I have no doubt that this tutorial will not be the most efficient way of producing such plots, if anyone has any tips on improving the code please feel free to contact me.*
+
+## Tutorial
+
+Firstly, let's start with obtaining the walking distance data we will be using. For this, we will be using the R library `openrouteservice`, which enables us to obtain free geographic data from [OpenStreetMap](http://www.openstreetmap.org/) through the **openrouteservice API**. We will also briefly use the `mapview` package.
+
+After reading the Open Route Service (ORS) [terms and conditions](https://openrouteservice.org/terms-of-service/), we can install and load the packages:
+
+```{r, message = FALSE}
+remotes::install_github("GIScience/openrouteservice-r")
+library(openrouteservice)
+library(mapview)
+```
+
+Before we can use the ORS data we need to get a free personal API key, which we get by [signing up](https://openrouteservice.org/dev/#/signup). The [openrouteservice intro here](https://giscience.github.io/openrouteservice-r/articles/openrouteservice.html) explains this step in more detail, but ends with us using the [`ors_api_key()`](https://giscience.github.io/openrouteservice-r/reference/ors_api_key.html) function to store the key.
+
+```{r, eval = FALSE}
+ors_api_key("<your-api-key>")
+```
+
+What we are interested in are isochrones: areas of equal travel time from a starting point. To obtain the isochrones, we first need the coordinates of our starting location (in this case, Clapham Junction station)
+
+```{r}
+coordinates <- data.frame(lon = c(-0.171201), lat = c(51.464290))
+```
+
+and then we can use the function [`ors_isochrones()`](https://giscience.github.io/openrouteservice-r/reference/ors_isochrones.html) to store the isochrones as an `sf` (simple features) object.
+
+```{r}
+cj_iso <- ors_isochrones(locations = coordinates, profile = "foot-walking", range = 3600, interval = 600, output = "sf")
+```
+
+The arguments we have used are:
+
+* `locations`: where we specify the coordinate of our site of interest.
+* `profile`: where we set our "route profile" which is basically our method of transport.
+    + Options include transport via car, bike, and wheelchair amongst others (a full list can be obtained with the function [`ors_profile()`](https://giscience.github.io/openrouteservice-r/reference/ors_profile.html))
+* `range`: The maximum value for our analyses in seconds (or meters if we wanted to do distance- but let's stick with time).
+* `interval`: The interval of our isochrones in seconds (i.e if you wanted an isochrone for every hour, this value would be 60 seconds x 60 minutes = 3600).
+* `output`: the format of our output.
+
+Now we just need to tidy up our `sf` object a bit. We can split the `sf` file into a list of each time interval (which we convert into a factor), reorder this list from largest to smallest isochrone, and rename the isochrones to something more intuitive (i.e. minutes).
+
+We can use the `mapview()` function to view a leaflet map to visualise the isochrones. This is useful to make a note of the approximate maximum/minimum latitude and longitude for our final map.
+
+```{r, message = FALSE}
+mapviewOptions(fgb = FALSE)
+
+intervals <- levels(factor(cj_iso$value))
+cj_iso_list_1 <- split(cj_iso, intervals)
+cj_iso_list <- cj_iso_list_1[rev(intervals)]
+
+names(cj_iso_list) <- sprintf("%s_min", as.numeric(names(cj_iso_list))/60)
+
+mapview(cj_iso_list, alpha.regions = 0.2, homebutton = FALSE, legend = FALSE)
+```
