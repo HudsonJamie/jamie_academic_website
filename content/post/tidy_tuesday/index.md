@@ -25,6 +25,20 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 46](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_46) - Learning with afrilearndata 🌍💻
+<details>
+  <summary> afrilearndata data courtesy of 
+  <a href = "https://github.com/afrimapr/afrilearndata">
+  afrilearndata</a> and 
+  <a href = "https://github.com/afrimapr/afrihealthsites">
+  afrihealthsites</a>
+  </summary>
+  
+![afrilearn](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_46/sudan_hospitals_09112021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 44](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_44) - Ultra trail running 🏃‍♀️
 <details>
   <summary> Ultra trail data courtesy of Benjamin Nowak by way of
