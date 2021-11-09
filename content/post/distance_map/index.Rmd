@@ -27,7 +27,7 @@ Unfortunately I have yet to find time to partake in the brilliant [#30DayMapChal
 
 One of my favourite parts of such a challenge is seeing wonderful maps produced using a variety of different tools ranging such as **QGIS**, **Mapshaper**, and (of course) **R**.
 
-One map that jumped out to me, and that I keep going back to, is this brilliant submission by [Maria Ruehringer](https://twitter.com/MRuehringer) for Day 2: Lines.
+One map that jumped out to me, and that I keep going back to, is this beautiful submission by [Maria Ruehringer](https://twitter.com/MRuehringer) for Day 2: Lines.
 
 
 ```{r twitter, echo = FALSE}
