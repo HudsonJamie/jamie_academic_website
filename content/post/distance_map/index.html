@@ -1,6 +1,6 @@
 ---
-draft: true
-title: "Walking distance map"
+draft: false
+title: "Mapping isochrones in {ggplot2}"
 author: "Jamie Hudson"
 date: "2021-11-05"
 output: html_document
@@ -22,28 +22,32 @@ toc: false
 <div id="daymapchallenge" class="section level2">
 <h2>#30DayMapChallenge</h2>
 <p>Unfortunately I have yet to find time to partake in the brilliant <a href="https://github.com/tjukanovt/30DayMapChallenge">#30DayMapChallenge</a>, an online challenge created by <a href="https://twitter.com/tjukanov">Topi Tjukanov</a>, where participants aim to create a map based on a specific daily theme throughout November.</p>
-<p>One of my favourite parts of such a challenge is seeing wonderful maps produced using a variety of different tools ranging such as QGIS, Mapshaper, and (of course) <strong>R</strong>.</p>
+<p>One of my favourite parts of such a challenge is seeing wonderful maps produced using a variety of different tools ranging such as <strong>QGIS</strong>, <strong>Mapshaper</strong>, and (of course) <strong>R</strong>.</p>
 <p>One map that jumped out to me, and that I keep going back to, is this brilliant submission by <a href="https://twitter.com/MRuehringer">Maria Ruehringer</a> for Day 2: Lines.</p>
-<blockquote class="twitter-tweet" data-width="550" data-lang="en" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">Day 2: Lines of <a href="https://twitter.com/hashtag/30DayMapChallenge?src=hash&amp;ref_src=twsrc%5Etfw">#30DayMapChallenge</a><br><br>Walking distance in minutes from <a href="https://twitter.com/hashtag/Amsterdam?src=hash&amp;ref_src=twsrc%5Etfw">#Amsterdam</a> Central Station<br><br>Tool: <a href="https://twitter.com/hashtag/QGIS?src=hash&amp;ref_src=twsrc%5Etfw">#QGIS</a>, <a href="https://twitter.com/hashtag/Inkscape?src=hash&amp;ref_src=twsrc%5Etfw">#Inkscape</a><br>Source: OpenStreetMap<a href="https://twitter.com/hashtag/gischat?src=hash&amp;ref_src=twsrc%5Etfw">#gischat</a> <a href="https://t.co/L8kQ5W9JM2">pic.twitter.com/L8kQ5W9JM2</a></p>&mdash; Maria Ruehringer (@MRuehringer) <a href="https://twitter.com/MRuehringer/status/1455453832666886144?ref_src=twsrc%5Etfw">November 2, 2021</a></blockquote>
+<blockquote class="twitter-tweet" align="center" data-width="550" data-lang="en" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">Day 2: Lines of <a href="https://twitter.com/hashtag/30DayMapChallenge?src=hash&amp;ref_src=twsrc%5Etfw">#30DayMapChallenge</a><br><br>Walking distance in minutes from <a href="https://twitter.com/hashtag/Amsterdam?src=hash&amp;ref_src=twsrc%5Etfw">#Amsterdam</a> Central Station<br><br>Tool: <a href="https://twitter.com/hashtag/QGIS?src=hash&amp;ref_src=twsrc%5Etfw">#QGIS</a>, <a href="https://twitter.com/hashtag/Inkscape?src=hash&amp;ref_src=twsrc%5Etfw">#Inkscape</a><br>Source: OpenStreetMap<a href="https://twitter.com/hashtag/gischat?src=hash&amp;ref_src=twsrc%5Etfw">#gischat</a> <a href="https://t.co/L8kQ5W9JM2">pic.twitter.com/L8kQ5W9JM2</a></p>&mdash; Maria Ruehringer (@MRuehringer) <a href="https://twitter.com/MRuehringer/status/1455453832666886144?ref_src=twsrc%5Etfw">November 2, 2021</a></blockquote>
 
 <p>Maria has used QGIS and Inkscape to produce this lovely map of Amsterdam, with the colour of each street mapped to walking distance from Amsterdam Central Station, using OpenStreetMap data.</p>
 <p>I thought I would try to recreate a similar plot using R, and use this as an opportunity to create a tutorial for such plots. For this, I will be using Battersea as our area of interest, Clapham Junction Station specifically, as this is the station I use to commute between London and Southampton.</p>
-<p><em>I have no doubt that this tutorial will not be the most efficient way of producing such plots, if anyone has any tips on improving the code please feel free to contact me.</em></p>
-<p><em>This tutorial also assumes you are familiar with the <a href="https://style.tidyverse.org/"><code>Tidyverse</code></a></em></p>
+<p><strong>I have no doubt that this tutorial will not be the most efficient way of producing such plots, if anyone has any tips on improving the code or clarity please feel free to <a href="mailto:jhudsonbio@gmail.com">contact me</a>.</strong></p>
+<p><em>This tutorial also assumes you have some familiarity with the <a href="https://style.tidyverse.org/"><code>Tidyverse</code></a> and related libraries and functions</em></p>
 </div>
 <div id="step-1-walking-distance-data" class="section level2">
 <h2>Step 1: Walking distance data</h2>
-<p>Firstly, let’s start with obtaining the walking distance data we will be using. For this, we will be using the R library <code>openrouteservice</code>, which enables us to obtain free geographic data from <a href="http://www.openstreetmap.org/">OpenStreetMap</a> through the <strong>openrouteservice API</strong>. We will also briefly use the <code>mapview</code> package.</p>
-<p>After reading the Open Route Service (ORS) <a href="https://openrouteservice.org/terms-of-service/">terms and conditions</a>, we can install and load the packages:</p>
-<pre class="r"><code>remotes::install_github(&quot;GIScience/openrouteservice-r&quot;)
-library(openrouteservice)
-library(mapview)</code></pre>
-<p>Before we can use the ORS data we need to get a free personal API key, which we get by <a href="https://openrouteservice.org/dev/#/signup">signing up</a>. The <a href="https://giscience.github.io/openrouteservice-r/articles/openrouteservice.html">openrouteservice intro here</a> explains this step in more detail, but ends with us using the <a href="https://giscience.github.io/openrouteservice-r/reference/ors_api_key.html"><code>ors_api_key()</code></a> function to store the key.</p>
+<p>Firstly, let’s obtain the walking distance data we will be using. For this, we will be using the R library <code>{openrouteservice}</code>, which enables us to obtain free geographic data from <a href="http://www.openstreetmap.org/">OpenStreetMap</a> through the <strong>openrouteservice API</strong>. We will also briefly use the <a href="https://r-spatial.github.io/mapview/index.html"><code>{mapview}</code></a> package.</p>
+<p>After reading the Open Route Service (ORS) <a href="https://openrouteservice.org/terms-of-service/">terms and conditions</a>, we can install and load all of the libraries we will be using during this tutorial. I will explain how and when we use each of the libraries as we go.</p>
+<pre class="r"><code>library(openrouteservice)
+library(mapview)
+library(tidyverse)
+library(osmdata)
+library(sf)
+library(paletteer)
+library(ggfx)</code></pre>
+<p>Before we can use the ORS data we need to get a free personal API key, which we obtain by <a href="https://openrouteservice.org/dev/#/signup">signing up</a>. The <a href="https://giscience.github.io/openrouteservice-r/articles/openrouteservice.html">openrouteservice introductory documentation</a> explains this step in more detail, but ends with us using the <a href="https://giscience.github.io/openrouteservice-r/reference/ors_api_key.html"><code>ors_api_key()</code></a> function to store the key.</p>
 <pre class="r"><code>ors_api_key(&quot;&lt;your-api-key&gt;&quot;)</code></pre>
-<p>What we are interested in are isochrones: areas of equal travel time from a starting point. To obtain the isochrones, we first need the coordinates of our starting location (in this case, Clapham Junction station)</p>
+<p>What we are really interested from the ORS data are <strong>isochrones</strong>: areas of equal travel time from a starting point. To obtain the isochrones, we first need the coordinates of our starting location (in this case, Clapham Junction station)</p>
 <pre class="r"><code>coordinates &lt;- data.frame(lon = c(-0.171201), lat = c(51.464290))</code></pre>
-<p>and then we can use the function <a href="https://giscience.github.io/openrouteservice-r/reference/ors_isochrones.html"><code>ors_isochrones()</code></a> to store the isochrones as an <code>sf</code> (simple features) object.</p>
-<pre class="r"><code>cj_iso &lt;- ors_isochrones(locations = coordinates, profile = &quot;foot-walking&quot;, range = 3600, interval = 600, output = &quot;sf&quot;)</code></pre>
+<p>and then we can use the function <a href="https://giscience.github.io/openrouteservice-r/reference/ors_isochrones.html"><code>ors_isochrones()</code></a> to store the isochrones as an simple features (<code>sf</code>) object.</p>
+<pre class="r"><code>cj_iso &lt;- ors_isochrones(locations = coordinates, profile = &quot;foot-walking&quot;, range = 6000, interval = 600, output = &quot;sf&quot;)</code></pre>
 <p>The arguments we have used are:</p>
 <ul>
 <li><code>locations</code>: where we specify the coordinate of our site of interest.</li>
@@ -53,34 +57,32 @@ library(mapview)</code></pre>
 </ul></li>
 <li><code>range</code>: The maximum value for our analyses in seconds (or meters if we wanted to do distance- but let’s stick with time).</li>
 <li><code>interval</code>: The interval of our isochrones in seconds (i.e if you wanted an isochrone for every hour, this value would be 60 seconds x 60 minutes = 3600).</li>
-<li><code>output</code>: the format of our output.</li>
+<li><code>output</code>: the format of our output, in this case <code>sf</code>.</li>
 </ul>
-<p>Now we just need to tidy up our <code>sf</code> object a bit. We can split the <code>sf</code> file into a list of each time interval (which we convert into a factor), reorder this list from largest to smallest isochrone, and rename the isochrones to something more intuitive (i.e. minutes).</p>
-<p>We can use the <code>mapview()</code> function to view an interactive leaflet map to visualise the isochrones. This is useful to make a note of the approximate maximum/minimum latitude and longitude for our final map.</p>
+<p>Now we just need to tidy up our <code>sf</code> object a bit. We can split <code>cj_iso</code> into a list of each time isochrone (which we convert into a factor), reorder this list from largest to smallest isochrone, and rename the isochrones to something more intuitive (i.e. minutes).</p>
+<p>We can use the <a href="https://r-spatial.github.io/mapview/reference/mapView.html"><code>mapview()</code></a> function from the <code>{mapview}</code> package to produce an interactive leaflet map to help visualise the isochrones. I found this was also useful to make a note of the approximate maximum/minimum latitude and longitude for our final map.</p>
 <pre class="r"><code>mapviewOptions(fgb = FALSE)
 
 intervals &lt;- levels(factor(cj_iso$value))
-cj_iso_list_1 &lt;- split(cj_iso, intervals)
-cj_iso_list &lt;- cj_iso_list_1[rev(intervals)]
+cj_iso_list &lt;- split(cj_iso, intervals)
+cj_iso_list &lt;- cj_iso_list[rev(intervals)]
 
 names(cj_iso_list) &lt;- sprintf(&quot;%s_min&quot;, as.numeric(names(cj_iso_list))/60)
 
 mapview(cj_iso_list, alpha.regions = 0.2, homebutton = FALSE, legend = FALSE)</code></pre>
-<p>Unfortunately I cannot get leaflet to run on my website, but here is a static image of what the <code>mapview()</code> function will produce:
+<p>Unfortunately I cannot get an interactive leaflet to run on my website, but here is a static image of what the <code>mapview()</code> function will produce:
 <img src="mapviewer_sample.png" /></p>
 </div>
-<div id="step-2-build-background-map" class="section level1">
-<h1>Step 2: Build background map</h1>
-<p>Now we need to obtain the data required plot our map (i.e. roads, rivers, railways etc). This is very similar to my <a href="https://github.com/HudsonJamie/tidy_tuesday#2021-week-27---london-animal-rescues-">week 33 #TidyTuesday submission</a>, and as I mention in the script for my #TidyTuesday submission, much of the code is adapted from <a href="https://taraskaduk.com/posts/2021-01-18-print-street-maps/#ref-burkhart">here</a>, <a href="https://ggplot2tutor.com/tutorials/streetmaps">here</a>, and <a href="https://joshuamccrain.com/tutorials/maps/streets_tutorial.html">here</a>. I highly recommend looking at these links for a more thorough description of map building in R.</p>
+<div id="step-2-build-background-map" class="section level2">
+<h2>Step 2: Build background map</h2>
+<p>Now we need to obtain the data required plot our map (i.e. roads, streets, pathways, etc). This is very similar to my <a href="https://github.com/HudsonJamie/tidy_tuesday#2021-week-27---london-animal-rescues-">week 33 #TidyTuesday submission</a>, and as I mention in the script for my #TidyTuesday submission, much of the code is adapted from great tutorials by <a href="https://taraskaduk.com/posts/2021-01-18-print-street-maps/#ref-burkhart">Taras Kaduk</a>, <a href="https://ggplot2tutor.com/tutorials/streetmaps">ggplot2tutor</a>, and <a href="https://joshuamccrain.com/tutorials/maps/streets_tutorial.html">Josh McCrain</a>. I highly recommend looking at these links for a more thorough explanation of street map building in R.</p>
 <p>To start, let’s set the limit for our map (i.e. the maximum and minimum values of latitude and longitude). Remember above I said the mapview map is useful for this!</p>
-<pre class="r"><code>x &lt;- c(-0.246226, -0.094604)
-y &lt;- c(51.417127, 51.502548)
+<pre class="r"><code>x &lt;- c(-0.287, -0.061)
+y &lt;- c(51.39, 51.55)
 
 custom_wandsworth &lt;- rbind(x,y) 
 colnames(custom_wandsworth) &lt;- c(&quot;min&quot;, &quot;max&quot;)</code></pre>
-<p>To obtain our data, we will use the package <a href="https://cran.r-project.org/web/packages/osmdata/vignettes/osmdata.html"><code>osmdata</code></a>, which allows us to access data from OpenStreetMap (OSM) in vector form. What we need for our code to do is basically query OSM data from the web, state what features (something that can be mapped, see <a href="https://wiki.openstreetmap.org/wiki/Map_features">here</a> for more info) we want, and tell <code>osmdata</code> how we want to save all this mappy goodness.</p>
-<pre class="r"><code>library(osmdata)</code></pre>
-<pre><code>## Data (c) OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright</code></pre>
+<p>To obtain our data for the background map, we will use the package <a href="https://cran.r-project.org/web/packages/osmdata/vignettes/osmdata.html"><code>osmdata</code></a>, which allows us to access data from OpenStreetMap (OSM) in vector form. What we need for our code to do is basically query OSM data from the web, state what features (something that can be mapped, see <a href="https://wiki.openstreetmap.org/wiki/Map_features">the OSM wiki</a> for more info) we want, and tell <code>osmdata</code> how we want to save all this mappy goodness.</p>
 <pre class="r"><code>streets &lt;- custom_wandsworth %&gt;%
   opq() %&gt;%
   add_osm_feature(key = &quot;highway&quot;, 
@@ -91,137 +93,84 @@ colnames(custom_wandsworth) &lt;- c(&quot;min&quot;, &quot;max&quot;)</code></pr
                             &quot;unclassified&quot;,
                             &quot;service&quot;, &quot;footway&quot;)) %&gt;%
   osmdata_sf()</code></pre>
-<p>Here we are providing our <code>custom_wandsworth</code> data.frame and piping it through:</p>
+<p>Here we are providing our <code>custom_wandsworth</code> matrix and piping it through:</p>
 <ul>
 <li><code>opq()</code>: to build an Overpass query (i.e. query OSM data from the web)</li>
 <li><code>add_osm_feature</code>: where we state what features we want:
 <ul>
 <li>features are represent as <code>key-value</code> pairs. All roads, paths, etc are designed the <code>key = highway</code> for example. Again, the <a href="https://wiki.openstreetmap.org/wiki/Map_features">map features page</a> is great for this.</li>
 </ul></li>
-<li><code>osmdata_sf()</code> enables us to return the query as an osmdata object in sf format.</li>
+<li><code>osmdata_sf()</code> enables us to return the query as an osmdata object in <code>sf</code> format.</li>
 </ul>
-<p>The above code has given us all the roads, paths, streets we could ever dream of in our little corner of London. Let’s also obtain railways</p>
-<pre class="r"><code>railway &lt;- custom_wandsworth %&gt;%
-  opq()%&gt;%
-  add_osm_feature(key = &quot;railway&quot;, value=&quot;rail&quot;) %&gt;%
-  osmdata_sf()</code></pre>
-<p>and water (after all, Clapham Junction is close to the River Thames). Note that lakes and rivers are part of two different <code>key</code> values.</p>
-<pre class="r"><code>nat_water &lt;- custom_wandsworth %&gt;%
-  opq() %&gt;%
-  add_osm_feature(key = &quot;natural&quot;, value = &quot;water&quot;) %&gt;%
-  osmdata_sf() %&gt;% 
-  unname_osmdata_sf()
-
-river &lt;- custom_wandsworth %&gt;%
-  opq() %&gt;%
-  add_osm_feature(key = &quot;waterway&quot;, value = c(&quot;river&quot;, &quot;riverbank&quot;)) %&gt;%
-  osmdata_sf() %&gt;% 
-  unname_osmdata_sf()</code></pre>
-<pre><code>## Request failed [429]. Retrying in 1.8 seconds...</code></pre>
-<p>We can combine the two watery sf objects. For this we need to load the package sf. What we do here is combine the <code>nat_water</code> and <code>rive</code> sf objects, extract the multipolygons, select osm_id and name variables, and create a new variable called <code>area</code> which is the area of each multipolygon, before removing the smallest 30% of water features.</p>
-<pre class="r"><code>library(sf)</code></pre>
-<pre><code>## Linking to GEOS 3.8.1, GDAL 3.2.1, PROJ 7.2.1</code></pre>
-<pre class="r"><code>water &lt;- c(nat_water, river) %&gt;% 
-  .$osm_multipolygons %&gt;% 
-  select(osm_id, name) %&gt;% 
-  mutate(area = st_area(.)) %&gt;% 
-  filter(area &gt;= quantile(area, probs = 0.3))</code></pre>
+<p>The above code has given us all the roads, paths, and streets we could ever dream of in our little corner of London. For simplicity, I will now refer to all of these “highway” values as streets.</p>
+<p>From the earlier leaflet map, we know that we could produce a map of Clapham Junction and add the isochrones as shapes on top of the map, however to replicate Maria’s map we want the individual streets to be coloured according to the isochrones. To do this we effectively want to “crop” our street data so that we have separate geometries for streets within each isochrone.</p>
+<p>To do this, I have created the little function below. In a nutshell, this finds the difference between consecutive isochrones (i.e. 30 mins and 40 mins) and crops our street coordinates to match this.</p>
 <pre class="r"><code>rep.x &lt;- function(i, na.rm=FALSE) {
   
   if(i == length(cj_iso_list)) {streets$osm_lines %&gt;% st_intersection(cj_iso_list[[i]])}
   
   else if(i &lt; length(cj_iso_list)) {streets$osm_lines %&gt;% st_intersection(st_difference(cj_iso_list[[i]], cj_iso_list[[i+1]]))}
 
-}
+}</code></pre>
+<p>We can then apply this function to each element of our <code>cj_iso_list</code> list (where each element is an isochrone) using the <a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/lapply"><code>lapply()</code></a> function. We can then extract each of the individual isochrone of the list if we wanted to (and plot lots of individual <code>geom</code>s for each isochrone), though a more concise way is running the function <a href="https://dplyr.tidyverse.org/reference/bind.html"><code>bind_rows()</code></a> from the <a href="https://dplyr.tidyverse.org/index.html"><code>dplyr()</code></a> package, which splits a list into a data frame.</p>
+<pre class="r"><code>list_df &lt;- lapply(1:length(cj_iso_list), rep.x)
 
-list_df &lt;- lapply(1:length(cj_iso_list), rep.x)</code></pre>
-<pre><code>## Warning: attribute variables are assumed to be spatially constant throughout all
-## geometries
-
-## Warning: attribute variables are assumed to be spatially constant throughout all
-## geometries
-
-## Warning: attribute variables are assumed to be spatially constant throughout all
-## geometries
-
-## Warning: attribute variables are assumed to be spatially constant throughout all
-## geometries
-
-## Warning: attribute variables are assumed to be spatially constant throughout all
-## geometries
-
-## Warning: attribute variables are assumed to be spatially constant throughout all
-## geometries
-
-## Warning: attribute variables are assumed to be spatially constant throughout all
-## geometries
-
-## Warning: attribute variables are assumed to be spatially constant throughout all
-## geometries
-
-## Warning: attribute variables are assumed to be spatially constant throughout all
-## geometries
-
-## Warning: attribute variables are assumed to be spatially constant throughout all
-## geometries
-
-## Warning: attribute variables are assumed to be spatially constant throughout all
-## geometries</code></pre>
-<pre class="r"><code>water_cropped &lt;- water %&gt;% st_crop(st_bbox(c(xmin = custom_wandsworth[1,1], xmax = custom_wandsworth[1,2], ymax = custom_wandsworth[2,2], ymin = custom_wandsworth[2,1]), crs = st_crs(4326)))</code></pre>
-<pre><code>## Warning: attribute variables are assumed to be spatially constant throughout all
-## geometries</code></pre>
-<pre class="r"><code>rail_cropped &lt;- railway$osm_lines %&gt;% st_crop(st_bbox(c(xmin = custom_wandsworth[1,1], xmax = custom_wandsworth[1,2], ymax = custom_wandsworth[2,2], ymin = custom_wandsworth[2,1]), crs = st_crs(4326)))</code></pre>
-<pre><code>## Warning: attribute variables are assumed to be spatially constant throughout all
-## geometries</code></pre>
-<pre class="r"><code>library(paletteer) 
-colpal &lt;- paletteer_d(&quot;rcartocolor::Mint&quot;, 6, direction = -1)
-
-ggplot() +
-  geom_sf(data = water_cropped,
-          inherit.aes = FALSE,
-          fill = &quot;#151515&quot;,
-          lwd = 0) +
+iso_df &lt;- dplyr::bind_rows(list_df)</code></pre>
+</div>
+<div id="step-3-plotting-the-final-map" class="section level2">
+<h2>Step 3: Plotting the final map</h2>
+<p>I recently came across the wonderful <a href="https://github.com/EmilHvitfeldt/paletteer"><code>{paletteer}</code></a> package, which provides a really easy way to obtain the hex codes of popular colour palettes in R. We use the <code>paletteer_c()</code> function to obtain 10 hex codes (for the 10 isochrones) of the palette <code>ocean.tempo</code> from the package <code>{pals}</code> and save this as a vector of colours, <code>colpal</code>. What is really neat about <code>{paletteer}</code> is that you can see the colourised hex colours when you call the colour vector in RStudio.</p>
+<pre class="r"><code>colpal &lt;- rev(paletteer_c(&quot;pals::ocean.tempo&quot;, 10))</code></pre>
+<p>We can now finally plot our map using <a href="https://ggplot2.tidyverse.org/"><code>{ggplot2}</code></a>. There is a lot of customisation that can be done in <code>{ggplot2}</code>, so I will only go over the key functions and arguments included here:</p>
+<ul>
+<li>We use the function <a href="https://ggplot2.tidyverse.org/reference/ggsf.html"><code>geom_sf()</code></a> to plot our simple feature objects (our streets and isochrone-streets).</li>
+<li>We map the colour of each isochrone-street region to a colour from our palette (i.e. <code>colour = colpal</code>)</li>
+<li>We use the function. <a href="https://ggplot2.tidyverse.org/reference/ggsf.html"><code>coord_sf()</code></a> to set the limits of our plot.</li>
+<li>Nice neon-glow is added to our text with the <a href="https://ggfx.data-imaginist.com/reference/with_outer_glow.html"><code>with_outer_glow()</code></a> function from <a href="https://ggfx.data-imaginist.com/index.html"><code>{ggfx}</code></a>.</li>
+</ul>
+<pre class="r"><code>save.image(file = &quot;./data/map.RData&quot;)</code></pre>
+<pre class="r"><code>ggplot() +
   geom_sf(data = streets$osm_lines,
-          inherit.aes = FALSE,
           color = &quot;#151515&quot;,
           size = .2) +
-  geom_sf(data = list_df[[1]],
-          inherit.aes = FALSE,
-          color = colpal[1],
+  geom_sf(data = iso_df,
+          aes(colour = as.factor(value),
+              geometry = geometry),
+          fill = &quot;#060606&quot;,
           size = .2,
           alpha = .8) +
-  geom_sf(data = list_df[[2]],
-          inherit.aes = FALSE,
-          color = colpal[2],
-          size = .2,
-          alpha = .8) +
-  geom_sf(data = list_df[[3]],
-          inherit.aes = FALSE,
-          color = colpal[3],
-          size = .2,
-          alpha = .8) +
-  geom_sf(data = list_df[[4]],
-          inherit.aes = FALSE,
-          color = colpal[4],
-          size = .2,
-          alpha = .8) +
-  geom_sf(data = list_df[[5]],
-          inherit.aes = FALSE,
-          color = colpal[5],
-          size = .2,
-          alpha = .8) +
-  geom_sf(data = list_df[[6]],
-          inherit.aes = FALSE,
-          color = colpal[6],
-          size = .2,
-          alpha = .8) +
-  geom_sf(data = rail_cropped,
-          inherit.aes = FALSE,
-          color = &quot;black&quot;,
-          size = .2,
-          alpha = .4) +
+  scale_colour_manual(values = rev(colpal),
+                      labels = seq(10,100,10),
+                      guide = guide_legend(override.aes = list(fill = rev(colpal), alpha = 1),
+                                           nrow = 1,
+                                           keywidth = 1.5,
+                                           keyheight = 0.3,
+                                           title.position = &quot;top&quot;,
+                                           label.position = &quot;bottom&quot;, 
+                                           label.hjust = 0.5)) +
+  coord_sf(xlim = custom_wandsworth[1,], 
+           ylim = custom_wandsworth[2,],
+           expand = FALSE)  +
+  with_outer_glow(annotate(geom = &quot;text&quot;, label = &quot;Walking the streets of Battersea&quot;,
+           x = -0.17, y = 51.543, size = 7.5, hjust = 0.5, colour = colpal[10], family = &quot;mono&quot;),
+           colour = colpal[4], sigma = 10, expand = 10) +
+  with_outer_glow(annotate(geom = &quot;text&quot;, label = &quot;How far can one walk from Clapham Junction in 100 minutes?&quot;,
+           x = -0.17, y = 51.536, size = 4, hjust = 0.5, colour = colpal[10], family = &quot;mono&quot;),
+           colour = colpal[4], sigma = 10, expand = 7) +
+  with_outer_glow(annotate(geom = &quot;text&quot;, label = &quot;@jamie_bio | source = © openrouteservice.org by HeiGIT | Map data © OpenStreetMap contributors&quot;,
+                           x = -0.13, y = 51.393, size = 1.5, hjust = 0.5, colour = colpal[10], family = &quot;mono&quot;),
+                  colour = colpal[4], sigma = 10, expand = 4) +
   theme_void() +
-  theme(plot.title = element_text(size = 38, family = &quot;lato&quot;, face=&quot;bold&quot;, hjust= 0.5),
-        plot.background = element_rect(fill = &quot;#060606&quot;, colour = NA))</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-11-1.png" width="80%" style="display: block; margin: auto;" /></p>
+  theme(plot.background = element_rect(fill = &quot;#060606&quot;),
+        panel.background = element_rect(fill = &quot;#060606&quot;),
+        legend.text = with_outer_glow(element_text(colour = colpal[10],
+                                   family = &quot;mono&quot;),
+                        colour = colpal[4], sigma = 2, expand = 3),
+        legend.title = element_blank(),
+        legend.position=c(0.5, 0.85),
+        legend.justification = &quot;bottom&quot;,
+        legend.direction = &quot;horizontal&quot;)</code></pre>
+<p><img src="ocean_tempo_map.png" /></p>
+<p>And obviously we can change the colour palette to suit individual preferences (I really like the original colour scheme from Maria’s image, which I think is the <code>magma</code> palette of <code>{viridis}</code>), though for example here is the <code>cividis</code> palette from the <code>{viridis}</code> package.</p>
+<p><img src="cividis_map.png" /></p>
 </div>
