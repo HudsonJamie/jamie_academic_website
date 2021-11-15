@@ -159,9 +159,10 @@ rep.x <- function(i, na.rm=FALSE) {
 
 }
 ```
-We can then apply this function to each element of our `cj_iso_list` list (where each element is an isochrone) using the [`lapply()`](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/lapply) function. We can then extract each of the individual isochrone of the list if we wanted to (and plot lots of individual `geom`s for each isochrone), though a more concise way is running the function [`bind_rows()`](https://dplyr.tidyverse.org/reference/bind.html) from the [`dplyr()`](https://dplyr.tidyverse.org/index.html) package, which splits a list into a data frame.
+We can then apply this function to each element of our `cj_iso_list` list (where each element is an isochrone) using the [`lapply()`](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/lapply) function. We can then extract each of the individual isochrone of the list if we wanted to (and plot lots of individual `geom`s for each isochrone), though a more concise way is running the function [`bind_rows()`](https://dplyr.tidyverse.org/reference/bind.html) from the [`dplyr()`](https://dplyr.tidyverse.org/index.html) package, which splits a list into a data frame. We also run the function [`sf_use_s2()`](https://r-spatial.github.io/sf/reference/s2.html) to switch of spherical geometry (s2) and use GEOS, as without this we can run into some errors with invalid spherical geometries (unfortunately the reasons why are beyond my knowledge right now, so if anyone can shed light on this, it would be much appreciated).
 
 ```{r, warning = FALSE, eval = FALSE}
+sf_use_s2(FALSE)
 list_df <- lapply(1:length(cj_iso_list), rep.x)
 
 iso_df <- dplyr::bind_rows(list_df)
