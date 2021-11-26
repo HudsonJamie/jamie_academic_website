@@ -1,6 +1,6 @@
 ---
 date: "2021-10-22T00:00:00Z"
-external_link: /post/2021-10-22-pokémon/
+external_link: /post/2021-10-22-pokemon/
 image:
   focal_point: Smart
 title: "Pokémon type charts"

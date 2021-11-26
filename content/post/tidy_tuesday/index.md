@@ -25,6 +25,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 48](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_48) - Doctor Who episode data 🚀📺
+<details>
+  <summary> Doctor Who data courtesy of 
+  <a href = "https://github.com/KittJonathan/datardis">
+  datardis</a> 
+  </summary>
+  
+![afrilearn](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_48/doctor_who_26112021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 46](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_46) - Learning with afrilearndata 🌍💻
 <details>
   <summary> afrilearndata data courtesy of 
