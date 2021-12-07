@@ -25,6 +25,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
+### [2021 week 50](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_49) - World Spider Database 🕷
+<details>
+  <summary> Spider data courtesy of 
+  <a href = "https://wsc.nmbe.ch/dataresources">
+  World Spider Database </a> 
+  </summary>
+  
+![spiders](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_50/spiders_07122021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 49](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_49) - ODI cricket data (1996-2005) 🏏
 <details>
   <summary> One Day International cricket data courtesy of Hassanasir by way of 
