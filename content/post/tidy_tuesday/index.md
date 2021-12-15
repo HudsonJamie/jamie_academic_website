@@ -25,7 +25,19 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 [My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
 
-### [2021 week 50](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_49) - World Spider Database 🕷
+### [2021 week 51](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_51) - Spice Girls 🇬🇧🎤
+<details>
+  <summary> Spice Girls data courtesy of 
+  <a href = "https://github.com/jacquietran/spice_girls_data">
+  Jacquie Tran </a> 
+  </summary>
+  
+![spice_girls](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_51/spice_girls_15122021.png?raw=true)
+</details>
+
+----
+
+### [2021 week 50](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_50) - World Spider Database 🕷
 <details>
   <summary> Spider data courtesy of 
   <a href = "https://wsc.nmbe.ch/dataresources">
