@@ -23,7 +23,7 @@ An important aspect of TidyTuesday is this, taken directly from the TidyTuesday 
 
 TidyTuesday is a bit of fun, and is often used to learn and improve R skills, data visualation techniques, and connect with the R community!
 
-[My GitHub with all of my contributions](https://github.com/HudsonJamie/tidy_tuesday):
+## [Click here to view my GitHub repo with all of my contributions and accompanying R scripts for reproducibility](https://github.com/HudsonJamie/tidy_tuesday)
 
 ### [2021 week 51](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_51) - Spice Girls 🇬🇧🎤
 <details>
