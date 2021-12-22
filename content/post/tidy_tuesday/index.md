@@ -25,6 +25,18 @@ TidyTuesday is a bit of fun, and is often used to learn and improve R skills, da
 
 ## [Click here to view my GitHub repo with all of my contributions and accompanying R scripts for reproducibility](https://github.com/HudsonJamie/tidy_tuesday)
 
+### [2021 week 52](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_52) - Starbucks Coffees ☕️
+<details>
+  <summary> Starbucks data courtesy of PythonCoderUnicorn via
+  <a href = "https://globalassets.starbucks.com/assets/94fbcc2ab1e24359850fa1870fc988bc.pdf">
+  Starbucks Coffee Company </a> 
+  </summary>
+  
+![starbucks](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2021/week_52/starbucks_21122021.png?raw=true)
+</details>
+
+----
+
 ### [2021 week 51](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_51) - Spice Girls 🇬🇧🎤
 <details>
   <summary> Spice Girls data courtesy of 
