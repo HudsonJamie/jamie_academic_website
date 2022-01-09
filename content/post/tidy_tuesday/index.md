@@ -15,15 +15,28 @@ image:
 toc: false
 ---
 
-[TidyTuesday](https://github.com/rfordatascience/tidytuesday/blob/master/README.md) is a weekly project produced by the `R4DS Online Learning Community` where each week a raw datset, chart, or article is posted. One is then able to tidy and explore the data, and produce an informative(?) visualisation.
+[TidyTuesday](https://github.com/rfordatascience/tidytuesday/blob/master/README.md) is a weekly project produced by the `R4DS Online Learning Community` where each week a raw dataset, chart, or article is posted. One is then able to tidy and explore the data, and produce a (hopefully) informative visualisation.
 
-An important aspect of TidyTuesday is this, taken directly from the TidyTuesday website:
+An important aspect of TidyTuesday is the following, taken directly from the TidyTuesday website:
 
 >We will have many sources of data and want to emphasize that no causation is implied. There are various moderating variables that affect all data, many of which might not have been captured in these datasets. As such, our guidelines are to use the data provided to practice your data tidying and plotting techniques. Participants are invited to consider for themselves what nuancing factors might underlie these relationships.
 
-TidyTuesday is a bit of fun, and is often used to learn and improve R skills, data visualation techniques, and connect with the R community!
+TidyTuesday is a lot of fun, and is often used to learn and improve R skills, data visualisation techniques, and connect with the R community!
 
 ## [Click here to view my GitHub repo with all of my contributions and accompanying R scripts for reproducibility](https://github.com/HudsonJamie/tidy_tuesday)
+
+### [2022 week 1](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_1) -  Relative Age Effect in Football ⚽️
+<details>
+  <summary> Football data courtesy of transfermarkt via
+  <a href = "https://jaseziv.github.io/worldfootballR/index.html">
+  {worldfootballR} </a> 
+  package
+  </summary>
+  
+![football_rae](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2022/week_1/football_rae_09012022.png?raw=true)
+</details>
+
+----
 
 ### [2021 week 52](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_52) - Starbucks Coffees ☕️
 <details>
