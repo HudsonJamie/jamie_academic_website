@@ -25,6 +25,18 @@ TidyTuesday is a lot of fun, and is often used to learn and improve R skills, da
 
 ## [Click here to view my GitHub repo with all of my contributions and accompanying R scripts for reproducibility](https://github.com/HudsonJamie/tidy_tuesday)
 
+### [2022 week 2](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_2) -  Bee colonies 🐝
+<details>
+  <summary> Bee colony data courtesy of
+  <a href = "https://usda.library.cornell.edu/concern/publications/rn301137d?locale=en">
+  USDA </a> 
+  </summary>
+  
+![bee_colonies](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2022/week_2/bee_colonies_13012022.png?raw=true)
+</details>
+
+----
+
 ### [2022 week 1](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_1) -  Relative Age Effect in Football ⚽️
 <details>
   <summary> Football data courtesy of transfermarkt via
