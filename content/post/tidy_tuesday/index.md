@@ -25,6 +25,10 @@ TidyTuesday is a lot of fun, and is often used to learn and improve R skills, da
 
 ## [Click here to view my GitHub repo with all of my contributions and accompanying R scripts for reproducibility](https://github.com/HudsonJamie/tidy_tuesday)
 
+# Year of viz: [2022](#2022) | [2021](#2021) 
+
+## 2022
+
 ### [2022 week 2](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_2) -  Bee colonies 🐝
 <details>
   <summary> Bee colony data courtesy of
@@ -49,6 +53,8 @@ TidyTuesday is a lot of fun, and is often used to learn and improve R skills, da
 </details>
 
 ----
+
+## 2021
 
 ### [2021 week 52](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2021/week_52) - Starbucks Coffees ☕️
 <details>
