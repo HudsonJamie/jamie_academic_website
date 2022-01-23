@@ -29,6 +29,19 @@ TidyTuesday is a lot of fun, and is often used to learn and improve R skills, da
 
 ## 2022
 
+### [2022 week 3](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_3) -  Chocolate ratings 🍫
+<details>
+  <summary> Chocolate ratings data courtesy of
+  <a href = "http://flavorsofcacao.com/chocolate_database.html">
+  Flavours of Cacao </a> 
+  thanks to Georgios and Kelsey
+  </summary>
+  
+![choc_ratings](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2022/week_3/choc_ratings_21012022.png?raw=true)
+</details>
+
+----
+
 ### [2022 week 2](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_2) -  Bee colonies 🐝
 <details>
   <summary> Bee colony data courtesy of
