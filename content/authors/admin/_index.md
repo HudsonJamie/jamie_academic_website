@@ -21,7 +21,7 @@ highlight_title: true
 interests:
 - Rstats
 - Data visualisation
-- Story telling
+- Data storytelling
 social:
 - icon: envelope
   icon_pack: fas

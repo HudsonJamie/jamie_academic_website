@@ -29,6 +29,19 @@ TidyTuesday is a lot of fun, and is often used to learn and improve R skills, da
 
 ## 2022
 
+### [2022 week 21](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_21) -  Women's Rugby 🏉
+<details>
+  <summary> Women's rugby data courtesy of
+  <a href = "https://www.scrumqueens.com/blogs/jbirch/story-behind-our-data-hub">
+  ScrumQueens </a> 
+  thanks to Jacquie Tran.
+  </summary>
+  
+![rugby_sevens](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2022/week_21/womens_rugby_25052022.png?raw=true)
+</details>
+
+----
+
 ### [2022 week 3](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_3) -  Chocolate ratings 🍫
 <details>
   <summary> Chocolate ratings data courtesy of
