@@ -29,6 +29,19 @@ TidyTuesday is a lot of fun, and is often used to learn and improve R skills, da
 
 ## 2022
 
+### [2022 week 23](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_23) -  Pride Corporate Accountability 🏳️‍🌈
+<details>
+  <summary> Pride Corporate Accountability data courtesy of 
+  <a href = "https://www.dataforprogress.org/accountable-allies">
+  Data For Progress </a> 
+  </summary>
+  
+![pride_hypocrites](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2022/week_23/pride_politicians_11062022.png?raw=true)
+
+</details>
+
+----
+
 ### [2022 week 21](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_21) -  Women's Rugby 🏉
 <details>
   <summary> Women's rugby data courtesy of
