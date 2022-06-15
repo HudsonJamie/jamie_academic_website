@@ -29,6 +29,19 @@ TidyTuesday is a lot of fun, and is often used to learn and improve R skills, da
 
 ## 2022
 
+### [2022 week 24](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_24) -  US drought data 🇺🇸
+<details>
+  <summary> Drought Conditions in the US  data courtesy of 
+  <a href = "https://www.drought.gov/">
+  National Integrated Drought Information System </a> 
+  </summary>
+  
+![us_droughts](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2022/week_24/drought_severity_15062022.gif?raw=true)
+
+</details>
+
+----
+
 ### [2022 week 23](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_23) -  Pride Corporate Accountability 🏳️‍🌈
 <details>
   <summary> Pride Corporate Accountability data courtesy of 
