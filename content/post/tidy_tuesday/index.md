@@ -29,9 +29,24 @@ TidyTuesday is a lot of fun, and is often used to learn and improve R skills, da
 
 ## 2022
 
+### [2022 week 26](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_26) -  UK gender pay gap 💷
+<details>
+  <summary>  UK gender pay gap data courtesy of 
+  <a href = "gender-pay-gap.service.gov.uk">
+  gender-pay-gap.service.gov.uk </a> 
+  </summary>
+  
+![ten_pounds](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2022/week_26/gender_pay_gap_1028062022.png?raw=true)
+
+![twenty_pounds](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2022/week_26/gender_pay_gap_20_28062022.png?raw=true)
+
+</details>
+
+----
+
 ### [2022 week 24](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_24) -  US drought data 🇺🇸
 <details>
-  <summary> Drought Conditions in the US  data courtesy of 
+  <summary> Drought Conditions in the US data courtesy of 
   <a href = "https://www.drought.gov/">
   National Integrated Drought Information System </a> 
   </summary>
