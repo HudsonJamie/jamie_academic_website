@@ -29,6 +29,20 @@ TidyTuesday is a lot of fun, and is often used to learn and improve R skills, da
 
 ## 2022
 
+### [2022 week 43](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_43) -  The Great British Bake Off 🧁
+<details>
+  <summary>  GBBO data courtesy of the 
+  <a href = "https://bakeoff.netlify.app/">
+  {bakeoff} </a> 
+  package
+  </summary>
+  
+![gbbo](https://github.com/HudsonJamie/tidy_tuesday/raw/main/2022/week_43/gbbo_27102022.png?raw=true)
+
+</details>
+
+----
+
 ### [2022 week 26](https://github.com/HudsonJamie/tidy_tuesday/tree/main/2022/week_26) -  UK gender pay gap 💷
 <details>
   <summary>  UK gender pay gap data courtesy of 
