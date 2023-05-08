@@ -3,7 +3,7 @@
 title: Dr Jamie Hudson
 superuser: true
 # role: <p style="font-size:30px">Dr Jamie Hudson</p><b>Data Scientist</b>
-role: Data Scientist
+role: Data Scientist 📊🧙
 organizations:
 - name: 
   url: ""
@@ -44,5 +44,6 @@ social:
 superuser: true
 ---
 
-I am a Data Scientist utilising Natural Language Processing to gain insights from unstructured datasets. This is quite a change from my previous career, where I was  a Postdoctoral Research Fellow using genomic tools to further understand population connectivity in the oceans and help mitigate the detrimental effects of climate change. 
+I am a Data Scientist utilising Natural Language Processing to gain insights from unstructured datasets. With a background in academic research, I have a deep understanding of the statistical analyses and research methodologies required to perform high-quality work, ranging from internal deliveries to peer-reviewed academic publications. In addition, I have a passion for data visualisation and enjoy using creative techniques to convey complex insights in a simple, intuitive (and fun) manner.
+
 
